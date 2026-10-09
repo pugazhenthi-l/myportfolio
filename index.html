@@ -1,14 +1,458 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Pugazh - Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pugazhenthi L | Growth Marketer, Chennai</title>
+<meta name="description" content="Growth marketer with 8 years in digital marketing. Took IshqME's ROAS from 0.8 to ~3 and repeat purchase from 27% to 51%. Paid media, retention, tracking and SEO.">
+<meta name="author" content="Pugazhenthi L">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Pugazhenthi L | Growth Marketer">
+<meta property="og:description" content="Took IshqME's ROAS from 0.8 to ~3 and repeat purchase from 27% to 51%. Paid media, retention, tracking and SEO.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F4F5F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10132A" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E3D9C'/%3E%3Cline x1='9' y1='21' x2='23' y2='11' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='21' r='3.5' fill='white'/%3E%3Ccircle cx='23' cy='11' r='4.5' fill='%23F5B63B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pugazhenthi L",
+  "jobTitle": "Growth Marketer",
+  "worksFor": { "@type": "Organization", "name": "M1 Marketing Pvt Ltd" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressRegion": "Tamil Nadu", "addressCountry": "IN" },
+  "email": "mailto:pugazzh2802@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/pugazhenthi-l"],
+  "knowsAbout": ["Performance marketing", "Meta Ads", "Google Ads", "Programmatic advertising", "Retention marketing", "Marketing analytics", "SEO"]
+}
+</script>
+<style>
+:root{
+  --bg:#F4F5F9;
+  --ink:#181C3A;
+  --muted:#565B7E;
+  --line:#D6D9E6;
+  --indigo:#2E3D9C;
+  --indigo-ink:#FFFFFF;
+  --marigold:#E39B12;
+  --band-bg:#2E3D9C;
+  --band-ink:#FFFFFF;
+  --band-muted:#C9CFF3;
+  --max:1120px;
+  --gutter:clamp(16px, 4vw, 40px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#10132A;
+    --ink:#ECEEF8;
+    --muted:#A2A7C8;
+    --line:#2B305A;
+    --indigo:#8E9CFF;
+    --indigo-ink:#10132A;
+    --marigold:#F5B63B;
+    --band-bg:#1C2463;
+    --band-ink:#FFFFFF;
+    --band-muted:#BFC6F5;
+  }
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:1.0625rem;
+  line-height:1.6;
+  font-stretch:100%;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:4px}
+::selection{background:var(--marigold);color:#181C3A}
+
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:10}
+.skip:focus{left:var(--gutter)}
+
+/* Header */
+.site-head{padding:1.5rem 0}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-stretch:118%;font-weight:750;font-size:1.05rem;text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;gap:1.75rem;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+
+/* Hero */
+.hero{padding:clamp(2rem,5vw,4rem) 0 clamp(3rem,7vw,5rem)}
+.hero h1{
+  margin:0;
+  font-stretch:122%;
+  font-weight:820;
+  font-size:clamp(2.25rem, 1.1rem + 3.9vw, 4.4rem);
+  line-height:.98;
+  letter-spacing:-.03em;
+  max-width:17ch;
+  text-wrap:balance;
+}
+.lede{margin:1.75rem 0 0;max-width:56ch;font-size:clamp(1.05rem,1rem + .35vw,1.25rem);color:var(--muted);line-height:1.55}
+.lede strong{color:var(--ink);font-weight:650}
+
+/* Ledger: before → after dumbbells */
+.ledger{margin-top:clamp(2.5rem,5vw,4rem);border-top:2px solid var(--ink)}
+.ledger-row{
+  display:grid;
+  grid-template-columns:minmax(10rem,1.25fr) 5.5rem minmax(8rem,3fr) 9.5rem;
+  align-items:center;
+  column-gap:clamp(1rem,2.5vw,2rem);
+  padding:1.15rem 0;
+  border-bottom:1px solid var(--line);
+}
+.ledger-head{padding:.7rem 0;font-size:.85rem;color:var(--muted)}
+.ledger-head span:nth-child(2){text-align:right}
+.ledger-head span:last-child{text-align:right}
+.metric{font-weight:650;line-height:1.3}
+.metric small{display:block;font-weight:400;color:var(--muted);font-size:.85rem;margin-top:.15rem}
+.v-from,.v-to{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.v-from{font-stretch:75%;font-weight:500;font-size:1.65rem;color:var(--muted)}
+.v-to{font-stretch:70%;font-weight:820;font-size:clamp(2.3rem,1.6rem + 2vw,3.4rem);line-height:1;letter-spacing:-.01em}
+
+.track{position:relative;height:30px}
+.track::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;margin-top:-1px;background:var(--line);border-radius:2px}
+.seg{
+  position:absolute;top:50%;height:6px;margin-top:-3px;
+  left:var(--from);width:calc(var(--to) - var(--from));
+  background:var(--indigo);border-radius:3px;
+  transform-origin:left center;
+  transition:transform 1.4s cubic-bezier(.2,.7,.15,1);
+}
+.dot{position:absolute;top:50%;border-radius:50%;transform:translate(-50%,-50%)}
+.dot-from{left:var(--from);width:13px;height:13px;background:var(--bg);border:2px solid var(--muted)}
+.dot-to{left:var(--to);width:18px;height:18px;background:var(--marigold);box-shadow:0 0 0 4px var(--bg);transition:left 1.4s cubic-bezier(.2,.7,.15,1)}
+.js .ledger:not(.is-run) .seg{transform:scaleX(0)}
+.js .ledger:not(.is-run) .dot-to{left:var(--from)}
+
+.ledger-note{margin:.9rem 0 0;font-size:.9rem;color:var(--muted)}
+
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem;margin-top:clamp(2rem,4vw,3rem)}
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.85rem 1.35rem;border-radius:6px;
+  background:var(--indigo);color:var(--indigo-ink);
+  font-weight:650;text-decoration:none;
+  transition:transform .15s ease, background-color .15s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.textlink{font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:5px;text-decoration-color:var(--line)}
+.textlink:hover{text-decoration-color:var(--indigo)}
+
+/* Sections */
+.section{padding:clamp(3.5rem,8vw,6rem) 0;border-top:1px solid var(--line)}
+.section h2{
+  margin:0 0 clamp(2rem,4vw,3rem);
+  font-stretch:118%;font-weight:780;
+  font-size:clamp(1.9rem,1.3rem + 2.2vw,2.9rem);
+  line-height:1.05;letter-spacing:-.025em;
+}
+.section-intro{margin:-1.5rem 0 2.75rem;max-width:58ch;color:var(--muted)}
+
+/* Experience timeline */
+.role{display:grid;grid-template-columns:11rem 1fr;column-gap:clamp(1rem,3vw,2.5rem)}
+.when{font-stretch:80%;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:.3rem;line-height:1.35}
+.role-body{position:relative;border-left:1px solid var(--line);padding:0 0 3rem clamp(1.25rem,3vw,2.25rem)}
+.role:last-child .role-body{padding-bottom:0}
+.role-body::before{
+  content:"";position:absolute;left:0;top:.55rem;
+  width:11px;height:11px;border-radius:50%;
+  transform:translateX(-50%);
+  background:var(--bg);border:2px solid var(--muted);
+}
+.role.current .role-body::before{width:15px;height:15px;background:var(--marigold);border:0;box-shadow:0 0 0 4px var(--bg)}
+.role h3{margin:0;font-stretch:112%;font-weight:720;font-size:1.4rem;line-height:1.2;letter-spacing:-.015em}
+.role .title{margin:.3rem 0 0;color:var(--muted)}
+.role ul{margin:1rem 0 0;padding-left:1.1rem;max-width:66ch}
+.role li{margin:.45rem 0;padding-left:.25rem}
+.role li::marker{color:var(--indigo)}
+.role li strong{font-weight:700}
+
+/* Toolkit */
+.kit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.25rem clamp(2rem,5vw,4.5rem)}
+.kit h3{margin:0 0 .5rem;font-stretch:110%;font-weight:700;font-size:1.1rem}
+.kit p{margin:0;color:var(--muted);max-width:52ch}
+
+/* Contact band */
+.band{background:var(--band-bg);color:var(--band-ink);padding:clamp(4rem,9vw,7rem) 0}
+.band h2{
+  margin:0;max-width:14ch;
+  font-stretch:122%;font-weight:820;
+  font-size:clamp(2.2rem,1.2rem + 4vw,4.6rem);
+  line-height:1;letter-spacing:-.03em;text-wrap:balance;
+}
+.band p{margin:1.5rem 0 0;max-width:50ch;color:var(--band-muted);font-size:1.1rem}
+.band .actions{margin-top:2.25rem}
+.band .btn{background:var(--marigold);color:#181C3A}
+.band .textlink{text-decoration-color:rgba(255,255,255,.4)}
+.band .textlink:hover{text-decoration-color:#fff}
+.band a:focus-visible{outline-color:#fff}
+
+.site-foot{padding:2rem 0;font-size:.9rem;color:var(--muted)}
+.site-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem}
+
+/* Responsive */
+@media (max-width:760px){
+  .nav{display:none}
+  .ledger-head{display:none}
+  .ledger-row{
+    grid-template-columns:auto 1fr auto;
+    grid-template-areas:"metric metric metric" "from track to";
+    row-gap:.6rem;column-gap:.9rem;
+  }
+  .metric{grid-area:metric}
+  .v-from{grid-area:from;font-size:1.3rem}
+  .track{grid-area:track}
+  .v-to{grid-area:to}
+  .role{grid-template-columns:1fr}
+  .when{padding:0 0 .35rem clamp(1.25rem,3vw,2.25rem);border-left:1px solid var(--line)}
+  .role-body::before{top:-1.45rem}
+  .kit{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  .seg,.dot-to,.btn{transition:none}
+}
+@media print{
+  .site-head .nav,.skip,.actions{display:none}
+  .band{background:none;color:#000}
+}
+</style>
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-    <h1>Hi, I'm Pugal</h1>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">Pugazhenthi L</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <p>Welcome to my portfolio.</p>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <h1>I make ad spend pay back, and customers come back.</h1>
+      <p class="lede">Growth marketer in Chennai with 8 years in digital marketing across D2C fashion, edtech and programmatic ad-tech. Right now I run a <strong>₹15L+ monthly</strong> Meta and Google budget at IshqME, where I took over an account that was losing money.</p>
 
+      <div class="ledger" aria-label="Results at IshqME since January 2025">
+        <div class="ledger-row ledger-head" aria-hidden="true">
+          <span>At IshqME</span><span>Inherited</span><span></span><span>Now</span>
+        </div>
+
+        <div class="ledger-row" style="--from:22.9%;--to:85.7%">
+          <span class="metric">Return on ad spend<small>Meta and Google, below break-even at the start</small></span>
+          <span class="v-from"><span class="sr-only">from </span>0.8</span>
+          <span class="track" aria-hidden="true"><span class="seg"></span><span class="dot dot-from"></span><span class="dot dot-to"></span></span>
+          <span class="v-to" data-from="0.8" data-to="3" data-format="roas" data-final="~3"><span class="sr-only">to </span>~3</span>
+        </div>
+
+        <div class="ledger-row" style="--from:45%;--to:85%">
+          <span class="metric">Repeat-purchase rate<small>RFM-segmented email and WhatsApp journeys</small></span>
+          <span class="v-from"><span class="sr-only">from </span>27%</span>
+          <span class="track" aria-hidden="true"><span class="seg"></span><span class="dot dot-from"></span><span class="dot dot-to"></span></span>
+          <span class="v-to" data-from="27" data-to="51" data-format="pct" data-final="51%"><span class="sr-only">to </span>51%</span>
+        </div>
+
+        <div class="ledger-row" style="--from:70.6%;--to:87.1%">
+          <span class="metric">Average order value<small>Bundles and a tiered cart-value offer</small></span>
+          <span class="v-from"><span class="sr-only">from </span>₹3,000</span>
+          <span class="track" aria-hidden="true"><span class="seg"></span><span class="dot dot-from"></span><span class="dot dot-to"></span></span>
+          <span class="v-to" data-from="3000" data-to="3700" data-format="inr" data-final="₹3,700"><span class="sr-only">to </span>₹3,700</span>
+        </div>
+      </div>
+      <p class="ledger-note">January 2025 to today. ROAS reached 2 within the first six months, with CAC falling alongside it.</p>
+
+      <div class="actions">
+        <a class="btn" href="mailto:pugazzh2802@gmail.com">Email me</a>
+        <a class="textlink" href="https://www.linkedin.com/in/pugazhenthi-l" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="textlink" href="resume.pdf" download>Download resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="wrap">
+      <h2 id="exp-h">Experience</h2>
+
+      <article class="role current">
+        <div class="when">Jan 2025 – now</div>
+        <div class="role-body">
+          <h3>IshqME</h3>
+          <p class="title">Performance Analyst, Growth and Paid Media<br>M1 Marketing Pvt Ltd, for a D2C fashion and lifestyle brand</p>
+          <ul>
+            <li>Own a <strong>₹15L+ monthly</strong> Meta and Google budget end to end, from funnel-stage media plans to bid and budget strategy across acquisition and retargeting.</li>
+            <li>Took a below-break-even account from <strong>0.8 ROAS to 2</strong> in six months and <strong>~3</strong> today through structured creative angle testing and influencer scripts built on the winning angles, while lowering CAC.</li>
+            <li>Lifted repeat purchase from <strong>27% to 51%</strong> with an RFM-segmented retention funnel and automated email and WhatsApp journeys.</li>
+            <li>Raised AOV from <strong>₹3,000 to ₹3,700</strong> with product bundles and a progressive cart-value offer panel.</li>
+            <li>Rebuilt the tracking stack (pixels, events, UTM structure) after buggy legacy pixels broke attribution, restoring clean conversion signals to Meta.</li>
+            <li>Negotiated backlinks in Elle, Forbes and Vogue at <strong>20–30% below</strong> quoted rates, and cut COD return-to-origin losses with AI voice calls that confirm orders before dispatch.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="when">Jun 2023 – Jan 2025</div>
+        <div class="role-body">
+          <h3>Memob Plus India</h3>
+          <p class="title">Programmatic Performance Executive</p>
+          <ul>
+            <li>Replaced manual reporting with automated dashboards and forecasting, cutting manual effort by <strong>50%</strong> and budget overspend by <strong>20%</strong>.</li>
+            <li>Delivered <strong>12+ programmatic campaigns a month</strong> and presented results directly to clients, agencies and partners.</li>
+            <li>Improved campaign performance by <strong>25%</strong> through continuous channel, tactic and targeting tests, and cut wasted spend by <strong>10%</strong> by reallocating budget on CPM, CPC, CPL and CPD trends.</li>
+            <li>Owned publisher relationships across the GCC region and built targeted media plans for RFP responses.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="when">Jul 2021 – Jun 2023</div>
+        <div class="role-body">
+          <h3>LMES Academy</h3>
+          <p class="title">Digital Marketing Team Lead for Chitti and PickMyCareer</p>
+          <ul>
+            <li>Led a team of digital marketing executives across Meta, Google and YouTube.</li>
+            <li>Raised ROI from <strong>15% to 18%</strong> on a ₹2L weekly budget through data-led reallocation, and grew leads by <strong>20%</strong> by rebuilding targeting from historical data.</li>
+            <li>Increased event attendance by <strong>60%</strong> with email and social nurture funnels.</li>
+            <li>Reworked the sales pitch with the sales team, contributing to a <strong>55%</strong> rise in conversions.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="when">Jun 2018 – Jun 2021</div>
+        <div class="role-body">
+          <h3>Freelance</h3>
+          <p class="title">Paid Ads Specialist and Copywriter</p>
+          <ul>
+            <li>Planned and ran Meta and Google campaigns for small businesses and individuals.</li>
+            <li>Wrote conversion-focused ad and landing-page copy that consistently improved CTR and lowered CPC.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="toolkit" aria-labelledby="kit-h">
+    <div class="wrap">
+      <h2 id="kit-h">Toolkit</h2>
+      <div class="kit">
+        <div>
+          <h3>Paid media</h3>
+          <p>Meta Ads Manager, Google Ads, WhatsApp Business Manager, programmatic display, media planning, bid and budget strategy, creative angle testing, influencer briefs.</p>
+        </div>
+        <div>
+          <h3>Tracking and analytics</h3>
+          <p>Google Analytics, Google Tag Manager, Meta Events Manager and pixel setup, UTM taxonomy, tracking audits, Power BI, advanced Excel, performance dashboards.</p>
+        </div>
+        <div>
+          <h3>Growth and retention</h3>
+          <p>RFM segmentation, email and WhatsApp lifecycle automation, AOV and bundling strategy, RTO reduction, CAC optimisation.</p>
+        </div>
+        <div>
+          <h3>SEO and digital PR</h3>
+          <p>SEO strategy, keyword and content briefs, premium publisher outreach, backlink negotiation.</p>
+        </div>
+        <div>
+          <h3>Stakeholders and deals</h3>
+          <p>Weekly reporting, client presentations, cross-functional briefs, RFP media plans, vendor and martech negotiation.</p>
+        </div>
+        <div>
+          <h3>Education and languages</h3>
+          <p>B.E. Mechanical Engineering, Chennai. English and Tamil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h">Have numbers that need to move?</h2>
+      <p>Email is the fastest way to reach me. I'm based in Chennai and work on India Standard Time.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:pugazzh2802@gmail.com">pugazzh2802@gmail.com</a>
+        <a class="textlink" href="https://www.linkedin.com/in/pugazhenthi-l" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Pugazhenthi L</span>
+    <span>Chennai, India</span>
+  </div>
+</footer>
+
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+<script>
+(function(){
+  var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+
+  var ledger=document.querySelector('.ledger');
+  if(!ledger) return;
+  var nums=[].slice.call(ledger.querySelectorAll('[data-to]'));
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function fmt(type,v){
+    if(type==='roas') return v.toFixed(1);
+    if(type==='pct') return Math.round(v)+'%';
+    if(type==='inr') return '₹'+(Math.round(v/10)*10).toLocaleString('en-IN');
+    return String(v);
+  }
+  function setVal(el,text){
+    // keep the screen-reader prefix, change only the visible number
+    var sr=el.querySelector('.sr-only');
+    el.textContent='';
+    if(sr) el.appendChild(sr);
+    el.appendChild(document.createTextNode(text));
+  }
+  function finish(){
+    ledger.classList.add('is-run');
+    nums.forEach(function(el){ setVal(el,el.dataset.final); });
+  }
+  if(reduce){ finish(); return; }
+
+  nums.forEach(function(el){ setVal(el,fmt(el.dataset.format,parseFloat(el.dataset.from))); });
+
+  function run(){
+    var dur=1400, t0=null;
+    ledger.classList.add('is-run');
+    function ease(t){ return 1-Math.pow(1-t,3); }
+    function tick(ts){
+      if(t0===null) t0=ts;
+      var p=Math.min((ts-t0)/dur,1), e=ease(p);
+      nums.forEach(function(el){
+        var a=parseFloat(el.dataset.from), b=parseFloat(el.dataset.to);
+        setVal(el, p<1 ? fmt(el.dataset.format,a+(b-a)*e) : el.dataset.final);
+      });
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var ready=(document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+  var started=false;
+  function go(){ if(started) return; started=true; setTimeout(run,250); }
+  ready.then(go); setTimeout(go,1200);
+})();
+</script>
 </body>
 </html>
