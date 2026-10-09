@@ -1,0 +1,27 @@
+{
+  // Cloudflare Worker config for the portfolio site.
+  // "name" must stay "myportfolio" so it deploys to the existing Worker.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "myportfolio",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+
+  // Everything inside /public is the website (index.html, resume.pdf, images/).
+  // Nothing outside /public is ever served.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+
+  // Newsletter subscribers live here, not in GitHub.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "newsletter",
+      "database_id": "e8382d2e-707f-4731-b507-9be1c157da3d"
+    }
+  ],
+
+  "observability": { "enabled": true }
+}
