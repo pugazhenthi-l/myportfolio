@@ -114,7 +114,7 @@ p{margin:0}
 .topbar .mail{font-size:.9rem}
 
 /* Cover */
-.cover{padding:clamp(1rem,3vw,2rem) 0 clamp(4rem,8vw,7rem)}
+.cover{padding:clamp(1rem,3vw,2rem) 0 clamp(2.5rem,6vw,4.5rem)}
 .masthead{
   position:relative;z-index:2;
   font-family:var(--serif);font-weight:600;color:var(--ink);
@@ -124,7 +124,7 @@ p{margin:0}
 }
 .cover-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(1.5rem,4vw,3.5rem);margin-top:-2.2vw}
 .cover-photo{aspect-ratio:4/5;grid-column:2;grid-row:1}
-.cover-copy{grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:flex-end;padding-top:clamp(3rem,7vw,6rem)}
+.cover-copy{grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:flex-start;padding-top:clamp(3rem,6.6vw,6rem);scroll-margin-top:1.5rem}
 .coverlines{list-style:none;margin:0;padding:0}
 .coverlines li{padding:1.1rem 0;border-top:1px solid var(--line)}
 .coverlines li:last-child{border-bottom:1px solid var(--line)}
@@ -132,8 +132,51 @@ p{margin:0}
 .cl-big .to{color:var(--muted);font-style:italic;font-weight:400;font-size:.62em;margin:0 .15em;vertical-align:.18em}
 .cl-big .sym{font-family:var(--sans);font-weight:500;font-size:.82em;letter-spacing:0}
 .cl-small{display:block;margin-top:.35rem;font-size:.95rem;color:var(--soft)}
-.cover-intro{margin-top:1.75rem;font-size:1.05rem;max-width:44ch}
-.cover-copy .actions{margin-top:1.75rem}
+.cover-intro{font-size:1.05rem;max-width:44ch}
+.cover-intro strong{color:var(--ink);font-weight:600}
+
+/* Topbar subscribe button */
+.pill{display:inline-flex;align-items:center;padding:.5rem 1.1rem;border:1px solid var(--accent);border-radius:999px;color:var(--ink);font-size:.9rem;font-weight:600;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+.pill:hover{background:var(--accent);color:#000}
+
+/* Newsletter signup */
+.nl-title{font-family:var(--serif);font-weight:500;color:var(--ink);font-size:clamp(1.8rem,1.2rem + 1.6vw,2.6rem);line-height:1.08;letter-spacing:-.015em;margin-top:1.25rem;max-width:20ch;text-wrap:balance}
+.signup{position:relative;margin-top:1.75rem;max-width:30rem}
+.signup-fields{display:grid;gap:.75rem}
+.signup input[type=email]{
+  width:100%;height:3.5rem;padding:0 1.35rem;border-radius:999px;
+  background:#0E0D0C;border:1px solid #3A3631;color:var(--ink);
+  font:inherit;font-size:1.05rem;
+}
+.signup input[type=email]::placeholder{color:var(--muted)}
+.signup input[type=email]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,179,61,.25)}
+.signup button{
+  height:3.5rem;border:0;border-radius:999px;cursor:pointer;
+  background:var(--accent);color:#000;font:inherit;font-weight:700;font-size:1.05rem;
+  transition:background-color .2s ease;
+}
+.signup button:hover{background:var(--ink)}
+.signup button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.signup button[disabled]{opacity:.7;cursor:progress}
+.signup .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.signup-status{margin-top:.85rem;color:var(--ink);font-weight:550}
+.signup-status:empty{display:none}
+.signup-status.is-error{color:#FF9F8F}
+.signup-note{margin-top:.75rem;font-size:.85rem;color:var(--muted)}
+.signup.is-done .signup-fields{display:none}
+.signup.is-done .signup-status{margin-top:0;font-family:var(--serif);font-weight:500;font-size:1.5rem;line-height:1.25}
+
+/* Proof strip */
+.proof{padding:clamp(1rem,3vw,2rem) 0 clamp(4rem,8vw,6rem)}
+.proof-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(1.5rem,4vw,3rem)}
+.proof-list li:last-child{border-bottom:0}
+.proof-list li{border-bottom:0}
+.proof-actions{margin-top:1.5rem}
+
+/* Newsletter band near the end */
+.nl-band{padding:clamp(4rem,9vw,7rem) 0;border-top:1px solid var(--line)}
+.nl-band-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(2rem,5vw,4rem);align-items:end}
+.nl-band .signup{margin-top:0}
 
 /* Sections */
 .section{padding:clamp(4.5rem,10vw,8rem) 0}
@@ -256,11 +299,15 @@ a.g-row:hover .g-name{text-decoration:underline;text-decoration-color:var(--acce
 @media (max-width:900px){
   .topbar nav{display:none}
   .cover-grid{grid-template-columns:1fr;margin-top:-3vw}
-  .cover-photo{grid-column:1;grid-row:1}
-  .cover-copy{grid-column:1;grid-row:2;padding-top:0}
+  .cover-photo{grid-column:1;grid-row:2}
+  .cover-copy{grid-column:1;grid-row:1;padding-top:clamp(2rem,6vw,3rem)}
   .head-row,.feature-grid,.lmes-grid,.origin,.press{grid-template-columns:1fr}
   .lmes-photo{position:relative;top:0;max-width:520px}
   .fixes{grid-template-columns:1fr}
+  .nl-band-grid{grid-template-columns:1fr}
+  .proof-list{grid-template-columns:1fr}
+  .proof-list li{border-bottom:0}
+  .proof-list li:last-child{border-bottom:1px solid var(--line)}
   .skills{grid-template-columns:1fr 1fr}
   .band-photo{aspect-ratio:4/3}
 }
@@ -300,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#lmes">LMES</a>
       <a href="#toolkit">Toolkit</a>
     </nav>
-    <a class="textlink mail" href="mailto:pugazzh2802@gmail.com">Email me</a>
+    <a class="pill" href="#newsletter">Subscribe</a>
   </div>
 </header>
 
@@ -314,19 +361,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <figure class="photo cover-photo" data-fallback data-file="images/pugazh-cover.jpg">
           <img src="images/pugazh-cover.jpg" alt="Pugazhenthi L, growth marketer" width="1600" height="2000" fetchpriority="high">
         </figure>
-        <div class="cover-copy">
-          <ul class="coverlines">
-            <li><span class="cl-big">0.8<span class="to">to</span>~3</span><span class="cl-small">Return on ad spend, on an account that was losing money</span></li>
-            <li><span class="cl-big">27%<span class="to">to</span>51%</span><span class="cl-small">Customers who come back and buy again</span></li>
-            <li><span class="cl-big"><span class="sym">₹</span>15L<span class="sym">+</span></span><span class="cl-small">Meta and Google budget I own every month</span></li>
-          </ul>
-          <p class="cover-intro">Growth marketer in Chennai. Eight years in digital marketing across paid media, retention, tracking, analytics and SEO, and the bridge between the data and the people who act on it.</p>
-          <div class="actions">
-            <a class="btn" href="mailto:pugazzh2802@gmail.com">Email me</a>
-            <a class="textlink" href="https://www.linkedin.com/in/pugazhenthi-l" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="textlink" href="resume.pdf" download>Resume (PDF)</a>
-          </div>
+        <div class="cover-copy" id="newsletter">
+          <p class="cover-intro">I'm a growth marketer in Chennai. I run a <strong>₹15L+ monthly</strong> Meta and Google budget, took a loss-making ad account to <strong>~3 ROAS</strong>, and nearly doubled repeat purchase from <strong>27% to 51%</strong>.</p>
+          <h2 class="nl-title">The marketing tricks and strategies that actually worked, free in your inbox.</h2>
+          <form class="signup" action="/api/subscribe" method="post" data-location="hero">
+            <div class="signup-fields">
+              <label class="sr-only" for="nl-email-hero">Email address</label>
+              <input id="nl-email-hero" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </div>
+            <input type="hidden" name="source" value="hero">
+            <div class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></div>
+            <p class="signup-status" role="status" aria-live="polite"></p>
+            <p class="signup-note">Free. Unsubscribe any time. Your email is never shared.</p>
+          </form>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof" aria-label="Results">
+    <div class="wrap">
+      <ul class="coverlines proof-list">
+        <li><span class="cl-big">0.8<span class="to">to</span>~3</span><span class="cl-small">Return on ad spend, on an account that was losing money</span></li>
+        <li><span class="cl-big">27%<span class="to">to</span>51%</span><span class="cl-small">Customers who come back and buy again</span></li>
+        <li><span class="cl-big"><span class="sym">₹</span>15L<span class="sym">+</span></span><span class="cl-small">Meta and Google budget I own every month</span></li>
+      </ul>
+      <div class="actions proof-actions">
+        <a class="textlink" href="mailto:pugazzh2802@gmail.com">Email me</a>
+        <a class="textlink" href="https://www.linkedin.com/in/pugazhenthi-l" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="textlink" href="resume.pdf" download>Resume (PDF)</a>
       </div>
     </div>
   </section>
@@ -642,6 +707,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- NEWSLETTER, AGAIN -->
+  <section class="nl-band" aria-labelledby="nl2-h">
+    <div class="wrap nl-band-grid">
+      <div>
+        <h2 class="display" id="nl2-h">Get the next strategy in your inbox</h2>
+        <p class="standfirst">What I test on real budgets, written up so you can use it. Free.</p>
+      </div>
+      <form class="signup" action="/api/subscribe" method="post" data-location="footer">
+        <div class="signup-fields">
+          <label class="sr-only" for="nl-email-footer">Email address</label>
+          <input id="nl-email-footer" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </div>
+        <input type="hidden" name="source" value="footer">
+        <div class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></div>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+        <p class="signup-note">Free. Unsubscribe any time. Your email is never shared.</p>
+      </form>
+    </div>
+  </section>
+
   <!-- CLOSING -->
   <section class="closing" id="contact" aria-labelledby="contact-h">
     <div class="wrap">
@@ -677,6 +763,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if(img.complete && img.naturalWidth===0) missing(img);
     else img.addEventListener('error',function(){ missing(img); });
   });
+
+  /* Newsletter signup: posts to /api/subscribe, shows the result in place,
+     and tells Google Tag Manager about it (never sends the email address itself) */
+  window.dataLayer=window.dataLayer||[];
+  var MSG={
+    ok:"You're subscribed. Watch your inbox for the next issue.",
+    already:"You're already on the list. Thanks for coming back.",
+    invalid:"That email doesn't look right. Check it and try again.",
+    failed:"That didn't go through. Try again in a minute.",
+    offline:"Couldn't reach the server. Check your connection and try again."
+  };
+  function show(form,text,isError,done){
+    var st=form.querySelector('.signup-status');
+    st.textContent=text; st.classList.toggle('is-error',!!isError);
+    if(done) form.classList.add('is-done');
+  }
+  [].forEach.call(document.querySelectorAll('form.signup'),function(form){
+    var input=form.querySelector('input[type=email]'), btn=form.querySelector('button'),
+        trap=form.querySelector('input[name=company]'), loc=form.getAttribute('data-location')||'';
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var email=(input.value||'').trim();
+      if(!email || !input.checkValidity()){ show(form,MSG.invalid,true); input.focus(); return; }
+      btn.disabled=true; btn.textContent='Subscribing…'; show(form,'',false);
+      fetch(form.getAttribute('action'),{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({email:email,source:loc,company:trap?trap.value:''})
+      }).then(function(res){
+        return res.json().catch(function(){return {};}).then(function(data){ return {res:res,data:data}; });
+      }).then(function(r){
+        if(r.res.ok && r.data.ok){
+          show(form, r.data.already?MSG.already:MSG.ok, false, true);
+          window.dataLayer.push({event:'newsletter_signup',form_location:loc,already_subscribed:!!r.data.already});
+        } else {
+          show(form, r.data.error==='invalid_email'?MSG.invalid:MSG.failed, true);
+        }
+      }).catch(function(){ show(form,MSG.offline,true); })
+        .then(function(){ btn.disabled=false; btn.textContent='Subscribe'; });
+    });
+  });
+  /* Without JavaScript the form posts normally and comes back with ?subscribed=... */
+  var flag=new URLSearchParams(location.search).get('subscribed'), hero=document.querySelector('form.signup[data-location="hero"]');
+  if(flag && hero){
+    if(flag==='ok') show(hero,MSG.ok,false,true);
+    else if(flag==='already') show(hero,MSG.already,false,true);
+    else show(hero,flag==='invalid'?MSG.invalid:MSG.failed,true);
+  }
 
   /* Waffle grids: 100 dots, the first N filled */
   [].forEach.call(document.querySelectorAll('.waffle-grid'),function(g){
