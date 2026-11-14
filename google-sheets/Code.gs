@@ -1,7 +1,8 @@
 /**
  * Newsletter subscribers -> Google Sheet
  *
- * Paste this into the sheet's Apps Script editor (Extensions > Apps Script).
+ * Paste this into an Apps Script project: either the sheet's own editor (Extensions > Apps Script)
+ * or a standalone project at script.google.com > New project. Both work.
  * The Cloudflare Worker (src/worker.js) POSTs each brand-new subscriber here.
  *
  * One-time setup (README.md has the full steps):
@@ -14,11 +15,18 @@
  * The secret token is never written in this file, so it is safe to keep in GitHub.
  */
 
+// The "Portfolio newsletter subscribers" sheet. Used when this script is a standalone
+// project (script.google.com > New project) instead of being opened from the sheet.
+const SHEET_ID = '1yuxIvqV4RHxgVgTUqsU5h71hTbDMnGoyynb1--3gXkk';
 const SHEET_NAME = 'Subscribers';
 const HEADERS = ['Signed up (IST)', 'Email', 'Form', 'Country'];
 
+function book_() {
+  return SpreadsheetApp.getActiveSpreadsheet() || SpreadsheetApp.openById(SHEET_ID);
+}
+
 function setup() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = book_();
   ss.setSpreadsheetTimeZone('Asia/Kolkata');
   const sh = sheet_();
   sh.setFrozenRows(1);
@@ -53,7 +61,7 @@ function doPost(e) {
 }
 
 function sheet_() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = book_();
   let sh = ss.getSheetByName(SHEET_NAME);
   if (!sh) {
     const first = ss.getSheets()[0];
