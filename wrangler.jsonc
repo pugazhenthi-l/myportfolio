@@ -25,6 +25,11 @@
 
   "observability": { "enabled": true },
 
+  // Only https://my.pugazzh7.workers.dev serves the site. Without this line every deploy
+  // switches the extra preview addresses (*-my.pugazzh7.workers.dev) back on.
+  "workers_dev": true,
+  "preview_urls": false,
+
   // Branch previews (Cloudflare runs `wrangler preview` for every non-main branch).
   // Previews use the same subscriber database, so a test signup on a preview link
   // lands in the real list, just like testing on the live site.
