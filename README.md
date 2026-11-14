@@ -2,7 +2,7 @@
 
 - `public/` is the website. Everything in it is public (index.html, resume.pdf, images/).
 - `src/worker.js` handles the newsletter form (`POST /api/subscribe`).
-- `wrangler.jsonc` tells Cloudflare how to deploy the `myportfolio` Worker.
+- `wrangler.jsonc` tells Cloudflare how to deploy the `my` Worker (live at https://my.pugazzh7.workers.dev).
 - `schema.sql` describes the subscriber table.
 
 ## Where subscriber emails go

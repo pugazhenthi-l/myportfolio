@@ -1,8 +1,8 @@
 {
   // Cloudflare Worker config for the portfolio site.
-  // "name" must stay "myportfolio" so it deploys to the existing Worker.
+  // "name" must match the Worker in Cloudflare. It also sets the address: my.pugazzh7.workers.dev
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "myportfolio",
+  "name": "my",
   "main": "src/worker.js",
   "compatibility_date": "2026-09-01",
 
