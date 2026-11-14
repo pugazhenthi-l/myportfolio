@@ -1,19 +1,20 @@
 // Worker for pugazh's portfolio.
 // Serves the static site, and handles POST /api/subscribe for the newsletter form.
 // Subscriber emails are stored in the Cloudflare D1 database bound as `DB` (see wrangler.jsonc),
-// never in the GitHub repository.
+// never in the GitHub repository. New subscribers are also copied to a Google Sheet when the
+// SHEETS_WEBHOOK_URL and SHEETS_TOKEN secrets are set (see google-sheets/Code.gs and README.md).
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (url.pathname === "/api/subscribe") {
       if (request.method !== "POST") {
         return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
       }
-      return subscribe(request, env, url);
+      return subscribe(request, env, ctx, url);
     }
 
     // Everything else is the static site.
@@ -21,7 +22,24 @@ export default {
   },
 };
 
-async function subscribe(request, env, url) {
+// Sends one new subscriber to the Google Sheet's Apps Script web app.
+// Runs after the response is sent, so a slow or failing sheet never affects the visitor.
+async function copyToSheet(env, row) {
+  if (!env.SHEETS_WEBHOOK_URL || !env.SHEETS_TOKEN) return;
+  try {
+    const res = await fetch(env.SHEETS_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token: env.SHEETS_TOKEN, ...row }),
+    });
+    const text = await res.text();
+    if (!res.ok || !text.includes('"ok":true')) console.error("sheet copy failed", res.status, text.slice(0, 200));
+  } catch (err) {
+    console.error("sheet copy failed", err);
+  }
+}
+
+async function subscribe(request, env, ctx, url) {
   // Only accept posts from this site's own pages.
   const origin = request.headers.get("Origin");
   if (origin && origin !== url.origin) {
@@ -51,12 +69,16 @@ async function subscribe(request, env, url) {
   }
 
   try {
+    const formSource = String(source || "").slice(0, 40);
+    const country = request.cf?.country || null;
     const result = await env.DB.prepare(
       "INSERT OR IGNORE INTO subscribers (email, source, country) VALUES (?1, ?2, ?3)"
     )
-      .bind(email, String(source || "").slice(0, 40), request.cf?.country || null)
+      .bind(email, formSource, country)
       .run();
     const already = result.meta.changes === 0;
+    // Only brand-new subscribers go to the sheet, so it has no duplicates.
+    if (!already && ctx) ctx.waitUntil(copyToSheet(env, { email, source: formSource, country }));
     return reply(request, url, 200, { ok: true, already });
   } catch (err) {
     console.error("subscribe failed", err);

@@ -13,24 +13,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title>Pugazhenthi L | Growth Marketer, Chennai</title>
 <meta name="description" content="Growth marketer with 8 years in digital marketing. Took IshqME's ROAS from 0.8 to ~3 and repeat purchase from 27% to 51%. Paid media, retention, tracking, analytics and SEO.">
 <meta name="author" content="Pugazhenthi L">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#4C1DB3">
+<link rel="canonical" href="https://myportfolio.pugazzh7.workers.dev/">
 <meta property="og:type" content="profile">
+<meta property="og:url" content="https://myportfolio.pugazzh7.workers.dev/">
 <meta property="og:title" content="Pugazhenthi L | Growth Marketer">
 <meta property="og:description" content="Took IshqME's ROAS from 0.8 to ~3 and repeat purchase from 27% to 51%. Paid media, retention, analytics and SEO.">
-<meta property="og:image" content="images/pugazh-cover.jpg">
+<meta property="og:image" content="https://myportfolio.pugazzh7.workers.dev/images/photo-1.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23000'/%3E%3Cline x1='9' y1='21' x2='23' y2='11' stroke='%23F2EDE4' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='21' r='3.5' fill='%23F2EDE4'/%3E%3Ccircle cx='23' cy='11' r='4.5' fill='%23F2B33D'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234C1DB3'/%3E%3Cline x1='9' y1='21' x2='23' y2='11' stroke='%23EFE7FF' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='21' r='3.5' fill='%23EFE7FF'/%3E%3Ccircle cx='23' cy='11' r='4.5' fill='%23FFB627'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Plus+Jakarta+Sans:wght@400..700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Pugazhenthi L",
   "jobTitle": "Growth Marketer",
-  "image": "images/pugazh-cover.jpg",
+  "url": "https://myportfolio.pugazzh7.workers.dev/",
+  "image": "https://myportfolio.pugazzh7.workers.dev/images/photo-1.jpg",
   "worksFor": { "@type": "Organization", "name": "M1 Marketing Pvt Ltd" },
   "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressRegion": "Tamil Nadu", "addressCountry": "IN" },
   "email": "mailto:pugazzh2802@gmail.com",
@@ -40,296 +42,330 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 <style>
+/* ---------- Tokens ---------- */
 :root{
-  color-scheme:dark;
-  --bg:#000000;
-  --ink:#F2EDE4;
-  --soft:#C4BDB1;
-  --muted:#8F887D;
-  --line:#2A2722;
-  --grid:#1C1A17;
-  --dim:#2E2B27;
-  --before:#6A645A;
-  --accent:#F2B33D;
+  --paper:#FCFAFF;      /* page */
+  --orchid:#F1EAFF;     /* tinted sections */
+  --lilac:#DCCBFF;      /* soft accents, masthead on violet */
+  --line:#E3DAF2;
+  --ink:#1E0F3D;        /* text */
+  --soft:#463B60;       /* secondary text */
+  --muted:#6B6184;      /* captions */
+  --before:#CEC4DE;     /* "before" in charts */
+
+  --violet:#4C1DB3;     /* primary brand colour, Memob Plus */
+  --violet-deep:#2C0E73;
+  --fuchsia:#E0338A;    /* IshqME */
+  --fuchsia-ink:#AE1466;
+  --marigold:#FFB627;   /* highlights, LMES */
+  --marigold-ink:#8A5A00;
+  --amethyst:#9A78F0;   /* freelance years */
+
   --max:1200px;
-  --gutter:clamp(16px,4vw,48px);
-  --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
-  --sans:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:clamp(18px,4vw,48px);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
+
+/* ---------- Base ---------- */
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{
-  margin:0;background:var(--bg);color:var(--soft);
-  font-family:var(--sans);font-size:1.0625rem;line-height:1.65;
-  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
-}
-img{display:block;max-width:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
-::selection{background:var(--accent);color:#000}
-h1,h2,h3{color:var(--ink);margin:0}
+h1,h2,h3{font-family:var(--display);font-optical-sizing:auto;margin:0;line-height:1.08;letter-spacing:-.015em}
 p{margin:0}
+strong{font-weight:700}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:4px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#000;padding:.6rem 1rem;z-index:20}
-.skip:focus{left:var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:.5rem .9rem;border-radius:6px;z-index:100}
+.skip:focus{left:8px}
 
-/* Shared type */
-.display{font-family:var(--serif);font-weight:500;font-size:clamp(2.3rem,1.4rem + 3.6vw,4.6rem);line-height:1.02;letter-spacing:-.02em;text-wrap:balance}
-.standfirst{margin-top:1.1rem;max-width:56ch;color:var(--muted);font-size:1rem}
-.prose p+p{margin-top:1.1em}
-.prose{max-width:60ch}
-.prose strong{color:var(--ink);font-weight:600}
-.btn{display:inline-flex;align-items:center;padding:.9rem 1.5rem;border-radius:999px;background:var(--ink);color:#000;font-weight:650;text-decoration:none;transition:background-color .2s ease}
-.btn:hover{background:var(--accent)}
-.textlink{color:var(--ink);font-weight:550;text-decoration:underline;text-decoration-color:var(--line);text-decoration-thickness:1px;text-underline-offset:6px;transition:text-decoration-color .2s ease}
-.textlink:hover{text-decoration-color:var(--accent)}
-.actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem}
+/* Placeholder marker, so dummy copy is easy to spot and replace */
+.dummy{display:inline-block;background:var(--marigold);color:var(--ink);font:700 .7rem/1.5 var(--sans);letter-spacing:.01em;padding:.1rem .45rem;border-radius:4px;margin-right:.45rem;vertical-align:.18em;white-space:nowrap}
+h2 .dummy,h3 .dummy{font-size:.8rem;vertical-align:.4em}
 
-/* Photo slots: black and white, with a visible placeholder until the file exists */
-.photo{position:relative;margin:0;background:#0E0D0C;overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.94)}
-.photo.is-missing img{display:none}
-.photo.is-missing::after{
-  content:"Photo goes here: " attr(data-file);
-  position:absolute;inset:0;display:grid;place-items:center;padding:1.5rem;text-align:center;
-  color:var(--muted);font-size:.85rem;border:1px solid var(--line);
-  background:repeating-linear-gradient(135deg,#0B0A09 0 14px,#100F0E 14px 28px);
-}
-/* Logo slots: logos render as white silhouettes; the name shows if the file is missing */
-.logo{display:inline-flex;align-items:center}
-.logo img{height:100%;width:auto;filter:brightness(0) invert(1);opacity:.85}
-.logo .logo-text{display:none;color:var(--ink);font-weight:650;font-stretch:90%}
-.logo.is-missing img{display:none}
-.logo.is-missing .logo-text{display:inline}
+/* ---------- Top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(252,250,255,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:1.5rem;height:64px}
+.name{font-family:var(--display);font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:-.02em;display:flex;align-items:center;gap:.55rem}
+.name::before{content:"";width:14px;height:14px;border-radius:50%;background:conic-gradient(var(--violet) 0 50%,var(--fuchsia) 50% 75%,var(--marigold) 75%)}
+.topbar nav{display:flex;gap:1.4rem;margin-left:auto;font-size:.95rem;font-weight:500}
+.topbar nav a{text-decoration:none;color:var(--soft)}
+.topbar nav a:hover{color:var(--violet)}
+.pill{background:var(--violet);color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;padding:.55rem 1.1rem;border-radius:999px}
+.pill:hover{background:var(--violet-deep)}
+@media (max-width:820px){.topbar nav{display:none}.pill{margin-left:auto}}
 
-/* Top bar */
-.topbar{position:relative;z-index:3;padding:1.25rem 0}
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.topbar nav{display:flex;gap:1.6rem;font-size:.9rem}
-.topbar nav a{text-decoration:none;color:var(--muted)}
-.topbar nav a:hover{color:var(--ink)}
-.topbar .name{font-weight:650;color:var(--ink);text-decoration:none;font-size:.95rem}
-.topbar .mail{font-size:.9rem}
-
-/* Cover */
-.cover{padding:clamp(1rem,3vw,2rem) 0 clamp(2.5rem,6vw,4.5rem)}
-.masthead{
-  position:relative;z-index:2;
-  font-family:var(--serif);font-weight:600;color:var(--ink);
-  font-size:clamp(3.3rem,16.2vw,12.6rem);line-height:.8;letter-spacing:-.035em;
-  margin:0 0 0 -.04em;white-space:nowrap;
-  mix-blend-mode:difference;
-}
-.cover-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(1.5rem,4vw,3.5rem);margin-top:-2.2vw}
-.cover-photo{aspect-ratio:4/5;grid-column:2;grid-row:1}
-.cover-copy{grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:flex-start;padding-top:clamp(3rem,6.6vw,6rem);scroll-margin-top:1.5rem}
-.coverlines{list-style:none;margin:0;padding:0}
-.coverlines li{padding:1.1rem 0;border-top:1px solid var(--line)}
-.coverlines li:last-child{border-bottom:1px solid var(--line)}
-.cl-big{display:block;font-family:var(--serif);font-weight:600;color:var(--ink);font-size:clamp(2rem,1.4rem + 2.2vw,3.2rem);line-height:1.05;letter-spacing:-.02em}
-.cl-big .to{color:var(--muted);font-style:italic;font-weight:400;font-size:.62em;margin:0 .15em;vertical-align:.18em}
-.cl-big .sym{font-family:var(--sans);font-weight:500;font-size:.82em;letter-spacing:0}
-.cl-small{display:block;margin-top:.35rem;font-size:.95rem;color:var(--soft)}
-.cover-intro{font-size:1.05rem;max-width:44ch}
-.cover-intro strong{color:var(--ink);font-weight:600}
-
-/* Topbar subscribe button */
-.pill{display:inline-flex;align-items:center;padding:.5rem 1.1rem;border:1px solid var(--accent);border-radius:999px;color:var(--ink);font-size:.9rem;font-weight:600;text-decoration:none;transition:background-color .2s ease,color .2s ease}
-.pill:hover{background:var(--accent);color:#000}
-
-/* Newsletter signup */
-.nl-title{font-family:var(--serif);font-weight:500;color:var(--ink);font-size:clamp(1.8rem,1.2rem + 1.6vw,2.6rem);line-height:1.08;letter-spacing:-.015em;margin-top:1.25rem;max-width:20ch;text-wrap:balance}
-.signup{position:relative;margin-top:1.75rem;max-width:30rem}
-.signup-fields{display:grid;gap:.75rem}
-.signup input[type=email]{
-  width:100%;height:3.5rem;padding:0 1.35rem;border-radius:999px;
-  background:#0E0D0C;border:1px solid #3A3631;color:var(--ink);
-  font:inherit;font-size:1.05rem;
-}
-.signup input[type=email]::placeholder{color:var(--muted)}
-.signup input[type=email]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,179,61,.25)}
-.signup button{
-  height:3.5rem;border:0;border-radius:999px;cursor:pointer;
-  background:var(--accent);color:#000;font:inherit;font-weight:700;font-size:1.05rem;
-  transition:background-color .2s ease;
-}
-.signup button:hover{background:var(--ink)}
-.signup button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-.signup button[disabled]{opacity:.7;cursor:progress}
-.signup .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.signup-status{margin-top:.85rem;color:var(--ink);font-weight:550}
-.signup-status:empty{display:none}
-.signup-status.is-error{color:#FF9F8F}
-.signup-note{margin-top:.75rem;font-size:.85rem;color:var(--muted)}
-.signup.is-done .signup-fields{display:none}
-.signup.is-done .signup-status{margin-top:0;font-family:var(--serif);font-weight:500;font-size:1.5rem;line-height:1.25}
-
-/* Proof strip */
-.proof{padding:clamp(1rem,3vw,2rem) 0 clamp(4rem,8vw,6rem)}
-.proof-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(1.5rem,4vw,3rem)}
-.proof-list li:last-child{border-bottom:0}
-.proof-list li{border-bottom:0}
-.proof-actions{margin-top:1.5rem}
-
-/* Newsletter band near the end */
-.nl-band{padding:clamp(4rem,9vw,7rem) 0;border-top:1px solid var(--line)}
-.nl-band-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(2rem,5vw,4rem);align-items:end}
-.nl-band .signup{margin-top:0}
-
-/* Sections */
-.section{padding:clamp(4.5rem,10vw,8rem) 0}
-.section + .section{border-top:1px solid var(--line)}
-.head-row{display:grid;grid-template-columns:7fr 5fr;gap:clamp(1.5rem,4vw,4rem);align-items:end;margin-bottom:clamp(2.5rem,5vw,4rem)}
-
-/* Gantt timeline */
-.gantt{border-top:1px solid var(--line)}
-.g-row{display:grid;grid-template-columns:minmax(14rem,22rem) 1fr;gap:clamp(1rem,3vw,2.5rem);align-items:center;padding:1.15rem 0;border-bottom:1px solid var(--line);text-decoration:none}
-a.g-row:hover .g-name{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px}
-.g-label{display:flex;align-items:center;gap:1rem;min-width:0}
-.g-label .logo{height:26px;flex:0 0 auto}
-.g-label .logo.is-missing{display:none}
-.g-name{display:block;color:var(--ink);font-weight:650;line-height:1.25}
-.g-meta{display:block;color:var(--muted);font-size:.88rem;line-height:1.35}
-.g-track{position:relative;height:32px;
-  background:repeating-linear-gradient(to right,var(--grid) 0 1px,transparent 1px calc(100% / var(--years,9)))}
-.g-bar{position:absolute;top:50%;height:12px;margin-top:-6px;border-radius:2px 4px 4px 2px;background:var(--before)}
-.g-row.current .g-bar{background:var(--accent)}
-.g-axis{display:grid;grid-template-columns:minmax(14rem,22rem) 1fr;gap:clamp(1rem,3vw,2.5rem);padding-top:.6rem}
-.g-ticks{position:relative;height:1.2rem;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
-.g-ticks span{position:absolute;top:0;transform:translateX(-1px)}
-
-/* Feature layouts */
-.feature-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2rem,5vw,5rem);align-items:start}
-.chart-title{color:var(--ink);font-weight:650;font-size:1rem}
-.chart-sub{color:var(--muted);font-size:.88rem;margin-top:.2rem}
-
-/* ROAS line chart */
-.roas{margin-top:1.5rem;position:relative;height:300px;padding:0 0 1.9rem 2.2rem}
-.roas .plot{position:relative;height:100%}
-.roas .gl{position:absolute;left:0;right:0;height:1px;background:var(--grid)}
-.roas .gl.base{background:var(--line)}
-.roas .yt{position:absolute;left:-2.2rem;width:1.7rem;text-align:right;transform:translateY(-50%);font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
-.roas .reveal{position:absolute;inset:0}
-.roas svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.roas .pt{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 2px var(--bg);transform:translate(-50%,-50%)}
-.roas .pt.first{background:var(--before)}
-.roas .pl{position:absolute;font-size:.85rem;color:var(--soft);line-height:1.25;white-space:nowrap}
-.roas .pl b{display:block;color:var(--ink);font-size:1.35rem;font-weight:700}
-.roas .xt{position:absolute;bottom:-1.9rem;font-size:.78rem;color:var(--muted);white-space:nowrap}
-.js .roas:not(.in) .reveal{clip-path:inset(0 100% 0 0)}
-.js .roas:not(.in) .pt,.js .roas:not(.in) .pl{opacity:0}
-.roas .reveal{transition:clip-path 1.6s cubic-bezier(.3,.6,.2,1)}
-.roas .pt,.roas .pl{transition:opacity .5s ease}
-.roas .d1{transition-delay:.55s}.roas .d2{transition-delay:1.5s}
-
-.pullquote{margin:clamp(3rem,6vw,5rem) 0 0;padding:0;font-family:var(--serif);font-style:italic;font-weight:400;color:var(--ink);font-size:clamp(1.8rem,1.2rem + 2.4vw,3.2rem);line-height:1.12;letter-spacing:-.01em;max-width:24ch}
-
-/* Full-bleed photo band */
-.band-photo{aspect-ratio:21/9;width:100%}
-
-/* Waffles and bars */
-.waffles{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,3vw,2.5rem)}
-.waffle-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;max-width:240px;margin-top:.9rem}
-.waffle-grid i{display:block;aspect-ratio:1;border-radius:50%;background:var(--dim)}
-.waffle-grid i.on{background:var(--before)}
-.waffle.after .waffle-grid i.on{background:var(--accent)}
-.w-num{font-weight:750;font-size:clamp(2rem,1.6rem + 1.5vw,2.8rem);line-height:1;color:var(--ink);margin-top:.35rem}
-.w-label{font-size:.9rem;color:var(--muted)}
-
-.bars{margin-top:1.25rem;display:grid;gap:.9rem}
-.bar-row{display:grid;grid-template-columns:minmax(9rem,13rem) 1fr;gap:1rem;align-items:center}
-.bar-label{color:var(--soft);font-size:.92rem;line-height:1.3}
-.bar-label small{display:block;color:var(--muted);font-size:.8rem}
-.bar-track{display:flex;align-items:center;gap:.6rem;min-width:0}
-.bar{height:16px;border-radius:0 4px 4px 0;background:var(--accent);flex:0 0 auto}
-.bar.muted{background:var(--before)}
-.bar-val{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
-
-/* Fixes */
-.fixes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(2rem,5vw,5rem)}
-.fix{padding:1.75rem 0;border-top:1px solid var(--line)}
-.fix h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.4rem,1.2rem + .7vw,1.85rem);line-height:1.15;margin-bottom:.6rem}
-.fix p{max-width:48ch}
-.press{margin-top:clamp(3rem,6vw,5rem);padding-top:2rem;border-top:1px solid var(--line);display:grid;grid-template-columns:7fr 5fr;gap:clamp(1.5rem,4vw,4rem);align-items:end}
-.press-names{display:flex;flex-wrap:wrap;gap:.1em .6em;font-family:var(--serif);color:var(--ink);font-size:clamp(3rem,1.6rem + 6vw,7.5rem);line-height:.95;letter-spacing:-.02em}
-.press-names span:nth-child(1){font-weight:500}
-.press-names span:nth-child(2){font-weight:800}
-.press-names span:nth-child(3){font-style:italic;font-weight:400}
-
-/* Memob */
-.big-fig{font-weight:750;color:var(--ink);font-size:clamp(3rem,2rem + 4vw,5.5rem);line-height:.95;letter-spacing:-.02em}
-.big-fig-label{color:var(--muted);margin-top:.5rem;max-width:30ch}
-
-/* LMES */
-.lmes-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2rem,5vw,5rem);align-items:start}
-.lmes-photo{aspect-ratio:4/5;position:sticky;top:2rem}
-.dumbbell{margin-top:2rem;padding-top:1.25rem;border-top:1px solid var(--line)}
-.db-row{display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:center;margin-top:.9rem}
-.db-track{position:relative;height:24px}
-.db-track::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
-.db-seg{position:absolute;top:50%;height:4px;margin-top:-2px;background:var(--accent);border-radius:2px}
-.db-dot{position:absolute;top:50%;width:12px;height:12px;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--bg)}
-.db-v{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
-.db-v.from{color:var(--muted);font-weight:500}
-
-/* Freelance */
-.origin{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2rem,5vw,5rem);align-items:end}
-.origin-year{font-family:var(--serif);font-weight:500;color:var(--ink);font-size:clamp(5rem,3rem + 10vw,12rem);line-height:.8;letter-spacing:-.04em}
-
-/* Toolkit */
-.logo-strip{display:flex;flex-wrap:wrap;align-items:center;gap:1.75rem clamp(2rem,5vw,3.5rem);padding:2rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.logo-strip .logo{height:28px}
-.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.25rem clamp(2rem,4vw,3.5rem);margin-top:clamp(2.5rem,5vw,3.5rem)}
-.skills h3{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin-bottom:.5rem}
-.skills p{font-size:.98rem}
-
-/* Closing */
-.closing{padding:clamp(5rem,12vw,10rem) 0 clamp(3rem,6vw,4rem);border-top:1px solid var(--line)}
-.closing h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.8rem,1.5rem + 6vw,7.5rem);line-height:.98;letter-spacing:-.03em;max-width:13ch}
-.closing .actions{margin-top:2.5rem}
-.colophon{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem 2rem;margin-top:clamp(4rem,8vw,6rem);padding-top:1.5rem;border-top:1px solid var(--line);font-size:.95rem}
-.colophon dt{color:var(--muted);font-size:.85rem}
-.colophon dd{margin:.2rem 0 0;color:var(--ink)}
-.site-foot{padding:1.75rem 0 2.5rem;font-size:.85rem;color:var(--muted)}
-.site-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem}
-
-/* Responsive */
+/* ---------- Hero ---------- */
+.hero{background:var(--violet);color:#fff;padding:clamp(2.5rem,6vw,4.5rem) 0 clamp(3rem,7vw,5.5rem);overflow:hidden;position:relative}
+.hero::after{content:"";position:absolute;right:-12vw;bottom:-18vw;width:46vw;height:46vw;border-radius:50%;background:var(--violet-deep);z-index:0}
+.hero .wrap{position:relative;z-index:1}
+.masthead{font-weight:800;font-size:clamp(3rem,13vw,10.4rem);line-height:.86;letter-spacing:-.045em;color:var(--lilac);margin-left:-.04em}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4.5rem);align-items:start;margin-top:clamp(1.5rem,3.5vw,2.75rem)}
+.hero-role{font-family:var(--display);font-weight:600;font-size:clamp(1.3rem,2.4vw,1.75rem);line-height:1.25;color:#fff;max-width:28ch}
+.hero-intro{margin-top:1.25rem;font-size:1.125rem;line-height:1.7;color:#E9E1FF;max-width:52ch}
+.hero-intro strong{color:var(--marigold)}
+.nl-card{margin-top:2rem;background:#fff;color:var(--ink);border-radius:20px;padding:clamp(1.25rem,3vw,1.75rem);max-width:560px}
+.nl-title{font-size:clamp(1.25rem,2.2vw,1.5rem);font-weight:700;line-height:1.2;letter-spacing:-.01em}
+.hero-visual{position:relative;padding:0 1.25rem 1.25rem 0}
+.hero-visual::before{content:"";position:absolute;inset:1.25rem 0 0 1.25rem;background:var(--fuchsia);border-radius:18px}
+.hero-visual .slot{position:relative;border-radius:18px}
 @media (max-width:900px){
-  .topbar nav{display:none}
-  .cover-grid{grid-template-columns:1fr;margin-top:-3vw}
-  .cover-photo{grid-column:1;grid-row:2}
-  .cover-copy{grid-column:1;grid-row:1;padding-top:clamp(2rem,6vw,3rem)}
-  .head-row,.feature-grid,.lmes-grid,.origin,.press{grid-template-columns:1fr}
-  .lmes-photo{position:relative;top:0;max-width:520px}
-  .fixes{grid-template-columns:1fr}
-  .nl-band-grid{grid-template-columns:1fr}
-  .proof-list{grid-template-columns:1fr}
-  .proof-list li{border-bottom:0}
-  .proof-list li:last-child{border-bottom:1px solid var(--line)}
-  .skills{grid-template-columns:1fr 1fr}
-  .band-photo{aspect-ratio:4/3}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visual{max-width:420px}
 }
-@media (max-width:640px){
+
+/* ---------- Signup form (hero + footer band) ---------- */
+.signup{margin-top:1rem}
+.signup-fields{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{flex:1 1 220px;min-width:0;font:inherit;font-size:1rem;padding:.85rem 1rem;border:2px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}
+.signup input[type=email]:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 4px rgba(76,29,179,.15)}
+.signup button{flex:0 0 auto;font:inherit;font-weight:700;font-size:1rem;padding:.85rem 1.4rem;border:0;border-radius:12px;background:var(--violet);color:#fff;cursor:pointer}
+.signup button:hover{background:var(--violet-deep)}
+.signup button:disabled{opacity:.7;cursor:progress}
+.signup-status{margin-top:.6rem;font-size:.95rem;font-weight:600;color:var(--violet);min-height:0}
+.signup-status:empty{display:none}
+.signup-status.is-error{color:#B4232A}
+.signup-note{margin-top:.6rem;font-size:.85rem;color:var(--muted)}
+.signup.is-done .signup-fields{display:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* ---------- Sections ---------- */
+.section{padding:clamp(4rem,9vw,7rem) 0}
+.tint{background:var(--orchid)}
+.head-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.5rem 4rem;align-items:end;margin-bottom:clamp(2rem,4vw,3rem)}
+.display{font-size:clamp(2rem,4.6vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.02}
+.standfirst{font-size:1.125rem;color:var(--soft);max-width:48ch}
+.prose{max-width:62ch}
+.prose p+p{margin-top:1rem}
+.prose strong{color:var(--ink);box-shadow:inset 0 -.38em 0 var(--brand-tint,rgba(255,182,39,.45))}
+@media (max-width:820px){.head-row{grid-template-columns:1fr;align-items:start}}
+
+/* Brand swatch: which brand a section belongs to (matches the timeline colours) */
+.swatch{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.92rem;color:var(--ink);margin-bottom:1rem}
+.swatch::before{content:"";width:22px;height:22px;border-radius:6px;background:var(--brand)}
+.b-ishqme{--brand:var(--fuchsia);--brand-ink:var(--fuchsia-ink);--brand-tint:rgba(224,51,138,.22)}
+.b-memob{--brand:var(--violet);--brand-ink:var(--violet);--brand-tint:rgba(76,29,179,.18)}
+.b-lmes{--brand:var(--marigold);--brand-ink:var(--marigold-ink);--brand-tint:rgba(255,182,39,.45)}
+.b-free{--brand:var(--amethyst);--brand-ink:#5E3FC0;--brand-tint:rgba(154,120,240,.25)}
+
+/* ---------- Image slots (photos) ---------- */
+.slot{position:relative;margin:0;border-radius:16px;overflow:hidden;background:var(--orchid)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;visibility:hidden}
+.slot.is-loaded img{visibility:visible}
+.r-4x5{aspect-ratio:4/5}.r-3x2{aspect-ratio:3/2}.r-1x1{aspect-ratio:1/1}.r-band{aspect-ratio:21/9}
+@media (max-width:700px){.r-band{aspect-ratio:3/2}}
+.slot.is-loaded .slot-label{display:none}
+.slot-label{display:flex;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;padding:1rem;text-align:center;color:var(--violet-deep);border:2px dashed var(--violet);border-radius:inherit;background:repeating-linear-gradient(135deg,#F1EAFF 0 16px,#E8DDFF 16px 32px)}
+.slot-label b{font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-.02em}
+.slot-label span{font-size:.85rem;font-weight:600}
+.slot-label small{font-size:.78rem;color:var(--muted)}
+
+/* ---------- Logos ---------- */
+.logo{display:inline-flex;align-items:center;justify-content:center}
+.logo img{max-height:36px;width:auto;display:none}
+.logo.is-loaded img{display:block}
+.logo.is-loaded .logo-text{display:none}
+.logo-text{display:inline-block;font-size:.78rem;font-weight:700;line-height:1.3;color:var(--violet-deep);border:1.5px dashed var(--violet);border-radius:8px;padding:.3rem .5rem;background:var(--orchid);text-align:center}
+
+/* ---------- Proof ---------- */
+.proof{padding:clamp(3rem,6vw,4.5rem) 0;border-bottom:1px solid var(--line)}
+.proof-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.5rem,4vw,3rem)}
+.proof-list li{display:flex;flex-direction:column;gap:.6rem;padding-top:1.1rem;border-top:4px solid var(--fuchsia)}
+.proof-list li:nth-child(2){border-top-color:var(--violet)}
+.proof-list li:nth-child(3){border-top-color:var(--marigold)}
+.cl-big{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:.95;letter-spacing:-.04em;color:var(--ink);display:flex;align-items:baseline;gap:.15em;flex-wrap:wrap}
+.cl-big .to{font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:0;color:var(--muted);padding:0 .2em}
+.cl-big .sym{font-size:.6em}
+.cl-small{font-size:1rem;color:var(--soft);max-width:30ch}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center}
+.proof-actions{margin-top:clamp(2rem,4vw,2.75rem)}
+.textlink{font-weight:700;color:var(--violet);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.textlink:hover{color:var(--fuchsia-ink)}
+@media (max-width:760px){.proof-list{grid-template-columns:1fr}}
+
+/* ---------- Brands wall ---------- */
+.brands{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1rem}
+.brand-tile{min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem;text-align:center}
+.brand-tile .logo img{max-height:48px}
+.brand-tile small{font-size:.78rem;color:var(--muted)}
+.brand-tile .logo.is-loaded+small{display:none}
+@media (max-width:900px){.brands{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.brands{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- Brand thinking ---------- */
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.pillar{background:#fff;border-radius:18px;padding:1.75rem 1.5rem 1.6rem;border-top:6px solid var(--violet)}
+.pillar:nth-child(2){border-top-color:var(--fuchsia)}
+.pillar:nth-child(3){border-top-color:var(--marigold)}
+.pillar h3{font-size:1.35rem;font-weight:700;margin-bottom:.7rem}
+.pillar p{color:var(--soft);font-size:1rem}
+@media (max-width:860px){.pillars{grid-template-columns:1fr}}
+
+/* ---------- Timeline ---------- */
+.gantt{display:flex;flex-direction:column;gap:.5rem}
+.g-row{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:1.5rem;align-items:center;text-decoration:none;padding:.65rem .75rem;border-radius:14px}
+.g-row:hover{background:var(--orchid)}
+.g-label{display:flex;align-items:center;gap:.75rem}
+.g-label .logo{width:44px;height:44px;flex:0 0 44px;border-radius:12px;background:#fff;border:1px solid var(--line);overflow:hidden}
+.g-label .logo img{max-height:30px;max-width:36px}
+.g-label .logo:not(.is-loaded){border:0;background:transparent}
+.g-label .logo .logo-text{font-size:.62rem;padding:.2rem;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.g-name{display:block;font-family:var(--display);font-weight:700;font-size:1.1rem;line-height:1.2}
+.g-meta{display:block;font-size:.85rem;color:var(--muted);line-height:1.45}
+.g-track{position:relative;height:30px;border-radius:8px;background:repeating-linear-gradient(90deg,transparent 0 calc(100%/var(--years,9) - 1px),var(--line) calc(100%/var(--years,9) - 1px) calc(100%/var(--years,9)))}
+.g-bar{position:absolute;top:0;bottom:0;border-radius:8px;background:var(--brand)}
+.g-row.current .g-bar{background:repeating-linear-gradient(135deg,var(--brand) 0 10px,#EA5CA2 10px 20px)}
+.g-axis{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:1.5rem;padding:0 .75rem;margin-top:.5rem}
+.g-ticks{position:relative;height:1.4rem;font-size:.8rem;color:var(--muted)}
+.g-ticks span{position:absolute;top:0;transform:translateX(-50%)}
+.g-ticks span:first-child{transform:none}
+@media (max-width:760px){
   .g-row{grid-template-columns:1fr;gap:.6rem}
   .g-axis{grid-template-columns:1fr}
-  .g-axis > span:first-child{display:none}
-  .skills,.colophon{grid-template-columns:1fr}
-  .bar-row{grid-template-columns:1fr;gap:.35rem}
-  .roas{height:240px}
-  .roas .pl{font-size:.78rem}
-  .roas .pl b{font-size:1.1rem}
+  .g-axis>span{display:none}
 }
-@media (prefers-reduced-motion:reduce){
-  .roas .reveal,.roas .pt,.roas .pl,.btn,.textlink{transition:none}
-}
-@media print{
-  :root{--bg:#fff;--ink:#000;--soft:#222;--muted:#555;--line:#ccc}
-  .topbar,.actions,.skip{display:none}
-}
+
+/* ---------- Case studies ---------- */
+.feature-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+@media (max-width:900px){.feature-grid{grid-template-columns:1fr}}
+.chart-title{font-family:var(--display);font-weight:700;font-size:1.15rem;line-height:1.3}
+.chart-sub{font-size:.88rem;color:var(--muted);margin-top:.2rem}
+.chart-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(1.25rem,3vw,1.75rem)}
+.tint .chart-card{border-color:transparent}
+
+/* ROAS line */
+.roas{margin-top:1.25rem;padding:0 0 2rem 1.75rem}
+.plot{position:relative;height:260px}
+.gl{position:absolute;left:0;right:0;height:1px;background:var(--line)}
+.gl.base{background:var(--before)}
+.yt{position:absolute;left:-1.75rem;transform:translateY(-50%);font-size:.8rem;color:var(--muted)}
+.xt{position:absolute;top:calc(100% + .6rem);font-size:.8rem;color:var(--muted);white-space:nowrap}
+.reveal{position:absolute;inset:0;clip-path:inset(0 100% 0 0);transition:clip-path 1.4s cubic-bezier(.2,.7,.2,1)}
+.reveal svg{width:100%;height:100%;display:block;overflow:visible}
+.roas.in .reveal{clip-path:inset(0 0 0 0)}
+.pt{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--fuchsia);border:3px solid #fff;box-shadow:0 0 0 2px var(--fuchsia);opacity:0;transition:opacity .3s}
+.roas.in .pt{opacity:1}
+.roas.in .pt.d1{transition-delay:.55s}.roas.in .pt.d2{transition-delay:1.25s}
+.pl{position:absolute;font-size:.82rem;color:var(--soft);line-height:1.25;opacity:0;transition:opacity .3s}
+.pl b{display:block;font-family:var(--display);font-size:1.35rem;color:var(--fuchsia-ink);font-weight:800}
+.roas.in .pl{opacity:1}
+.roas.in .pl.d1{transition-delay:.6s}.roas.in .pl.d2{transition-delay:1.3s}
+@media (prefers-reduced-motion:reduce){.reveal,.pt,.pl{transition:none}}
+@media (max-width:520px){.xt{font-size:.7rem}}
+
+.pullquote{margin:clamp(3rem,6vw,4.5rem) 0 0;background:var(--fuchsia);color:#fff;border-radius:24px;padding:clamp(2rem,5vw,3.5rem);font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,4vw,3rem);line-height:1.1;letter-spacing:-.025em}
+
+/* Waffles */
+.waffles{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.w-label{font-size:.9rem;color:var(--muted);font-weight:600}
+.w-num{font-family:var(--display);font-weight:800;font-size:2.4rem;line-height:1.1;letter-spacing:-.03em}
+.waffle.after .w-num{color:var(--fuchsia-ink)}
+.waffle-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;margin-top:.6rem;max-width:220px}
+.waffle-grid i{aspect-ratio:1;border-radius:3px;background:var(--orchid)}
+.waffle.before .waffle-grid i.on{background:var(--before)}
+.waffle.after .waffle-grid i.on{background:var(--fuchsia)}
+
+/* Bars */
+.bars{display:flex;flex-direction:column;gap:.85rem;margin-top:1rem}
+.bar-row{display:grid;grid-template-columns:minmax(120px,40%) minmax(0,1fr);gap:1rem;align-items:center}
+.bar-label{font-size:.95rem;font-weight:600;line-height:1.3}
+.bar-label small{display:block;font-weight:400;font-size:.8rem;color:var(--muted)}
+.bar-track{display:flex;align-items:center;gap:.6rem}
+.bar{display:block;height:22px;border-radius:6px;background:var(--brand,var(--violet))}
+.bar.muted{background:var(--before)}
+.bar-val{font-family:var(--display);font-weight:800;font-size:1.05rem;white-space:nowrap}
+@media (max-width:520px){.bar-row{grid-template-columns:1fr;gap:.35rem}}
+
+/* Photo band */
+.band{padding:0 0 clamp(1rem,3vw,2rem)}
+
+/* Gallery (campaign work) */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.gallery figure{margin:0}
+.gallery figcaption{margin-top:.7rem;font-size:.92rem;color:var(--soft);line-height:1.45}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Fixes */
+.fixes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.fix{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.5rem 1.5rem 1.4rem}
+.fix h3{font-size:1.2rem;font-weight:700;margin-bottom:.5rem}
+.fix p{color:var(--soft);font-size:1rem}
+@media (max-width:760px){.fixes{grid-template-columns:1fr}}
+.press{margin-top:1.25rem;display:grid;grid-template-columns:auto minmax(0,1fr);gap:1rem 2.5rem;align-items:center;background:var(--ink);color:#E6DEF7;border-radius:20px;padding:clamp(1.5rem,4vw,2.25rem)}
+.press-names{display:flex;gap:1.5rem;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,3.5vw,2.3rem);color:#fff;letter-spacing:-.02em}
+.press strong{color:var(--marigold)}
+@media (max-width:760px){.press{grid-template-columns:1fr}}
+
+/* Memob */
+.big-fig{font-family:var(--display);font-weight:800;font-size:clamp(4rem,10vw,7rem);line-height:.9;letter-spacing:-.05em;color:var(--violet)}
+.big-fig-label{margin-top:.75rem;font-size:1.1rem;color:var(--soft);max-width:40ch}
+
+/* LMES */
+.lmes-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+@media (max-width:900px){.lmes-grid{grid-template-columns:1fr}.lmes-grid .slot{max-width:420px}}
+.dumbbell{margin-top:2.25rem}
+.db-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:.9rem;align-items:center;margin-top:1rem}
+.db-v{font-family:var(--display);font-weight:800;font-size:1.15rem}
+.db-v.from{color:var(--muted)}
+.db-track{position:relative;height:12px;border-radius:6px;background:var(--orchid)}
+.db-seg{position:absolute;top:4px;height:4px;background:var(--marigold)}
+.db-dot{position:absolute;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;border:3px solid #fff}
+
+/* Freelance */
+.origin{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);align-items:start}
+.origin-year{font-family:var(--display);font-weight:800;font-size:clamp(4rem,12vw,9rem);line-height:.85;letter-spacing:-.05em;color:var(--amethyst)}
+@media (max-width:700px){.origin{grid-template-columns:1fr}}
+
+/* Toolkit */
+.logo-strip{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:clamp(2rem,4vw,3rem)}
+.logo-strip .logo{min-width:120px;height:72px;padding:.75rem 1rem;background:#fff;border:1px solid var(--line);border-radius:14px}
+.logo-strip .logo:not(.is-loaded){border-style:dashed}
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem 2.5rem}
+.skills h3{font-size:1.15rem;font-weight:700;margin-bottom:.45rem;display:flex;align-items:center;gap:.5rem}
+.skills h3::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--violet)}
+.skills>div:nth-child(2) h3::before{background:var(--fuchsia)}
+.skills>div:nth-child(3) h3::before{background:var(--marigold)}
+.skills>div:nth-child(4) h3::before{background:var(--amethyst)}
+.skills>div:nth-child(5) h3::before{background:var(--ink)}
+.skills p{font-size:.98rem;color:var(--soft)}
+@media (max-width:900px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.skills{grid-template-columns:1fr}}
+
+/* Testimonials */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.quote{margin:0;background:#fff;border-radius:18px;padding:1.6rem 1.5rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem}
+.quote blockquote{margin:0;font-family:var(--display);font-weight:600;font-size:1.2rem;line-height:1.35;letter-spacing:-.01em}
+.quote figcaption{display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--soft)}
+.avatar{flex:0 0 42px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;color:#fff;background:var(--violet)}
+.quote:nth-child(2) .avatar{background:var(--fuchsia)}
+.quote:nth-child(3) .avatar{background:var(--marigold);color:var(--ink)}
+@media (max-width:900px){.quotes{grid-template-columns:1fr}}
+
+/* Newsletter band */
+.nl-band{background:var(--violet);color:#fff;padding:clamp(3.5rem,8vw,6rem) 0}
+.nl-band-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 4rem;align-items:center}
+.nl-band .display{color:#fff}
+.nl-band .standfirst{color:#E2D8FF;margin-top:1rem}
+.nl-band .nl-card{margin-top:0;justify-self:end;width:100%}
+@media (max-width:860px){.nl-band-grid{grid-template-columns:1fr}.nl-band .nl-card{justify-self:start}}
+
+/* Closing */
+.closing{padding:clamp(4rem,9vw,7rem) 0 clamp(3rem,6vw,4rem)}
+.closing h2{font-size:clamp(2.4rem,7vw,5.5rem);font-weight:800;letter-spacing:-.045em;line-height:.95;max-width:14ch}
+.closing .actions{margin-top:2rem}
+.btn{display:inline-block;background:var(--fuchsia);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.4rem;border-radius:12px}
+.btn:hover{background:var(--fuchsia-ink)}
+.colophon{margin:clamp(3rem,6vw,4rem) 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;border-top:1px solid var(--line);padding-top:1.5rem}
+.colophon dt{font-size:.85rem;color:var(--muted)}
+.colophon dd{margin:.2rem 0 0;font-weight:600}
+@media (max-width:700px){.colophon{grid-template-columns:1fr}}
+.site-foot{border-top:1px solid var(--line);padding:1.5rem 0;font-size:.9rem;color:var(--muted)}
+.site-foot .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 </style>
-<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -337,6 +373,14 @@ a.g-row:hover .g-name{text-decoration:underline;text-decoration-color:var(--acce
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <a class="skip" href="#main">Skip to content</a>
+
+<!--
+  HOW TO FILL THE PLACEHOLDERS
+  - Text starting with "✕ DUMMY" is placeholder copy. Search this file for "DUMMY" to find all of it.
+  - Photos: upload to /public/images/ as photo-1.jpg ... photo-7.jpg. They appear automatically.
+  - Logos:  upload to /public/images/ as logo-1.png ... logo-13.png (transparent PNG or SVG renamed to .png works best).
+  The full list is in README.md.
+-->
 
 <header class="topbar">
   <div class="wrap">
@@ -353,28 +397,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main id="main">
 
-  <!-- COVER -->
-  <section class="cover" id="top" aria-label="Introduction">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Introduction">
     <div class="wrap">
       <h1 class="masthead">Pugazhenthi</h1>
-      <div class="cover-grid">
-        <figure class="photo cover-photo" data-fallback data-file="images/pugazh-cover.jpg">
-          <img src="images/pugazh-cover.jpg" alt="Pugazhenthi L, growth marketer" width="1600" height="2000" fetchpriority="high">
-        </figure>
-        <div class="cover-copy" id="newsletter">
-          <p class="cover-intro">I'm a growth marketer in Chennai. I run a <strong>₹15L+ monthly</strong> Meta and Google budget, took a loss-making ad account to <strong>~3 ROAS</strong>, and nearly doubled repeat purchase from <strong>27% to 51%</strong>.</p>
-          <h2 class="nl-title">The marketing tricks and strategies that actually worked, free in your inbox.</h2>
-          <form class="signup" action="/api/subscribe" method="post" data-location="hero">
-            <div class="signup-fields">
-              <label class="sr-only" for="nl-email-hero">Email address</label>
-              <input id="nl-email-hero" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Enter your email">
-              <button type="submit">Subscribe</button>
-            </div>
-            <input type="hidden" name="source" value="hero">
-            <div class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></div>
-            <p class="signup-status" role="status" aria-live="polite"></p>
-            <p class="signup-note">Free. Unsubscribe any time. Your email is never shared.</p>
-          </form>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-role"><span class="dummy">✕ DUMMY</span>Brand-led performance marketer for fashion and lifestyle brands.</p>
+          <p class="hero-intro">I'm a growth marketer in Chennai. I run a <strong>₹15L+ monthly</strong> Meta and Google budget, took a loss-making ad account to <strong>~3 ROAS</strong>, and nearly doubled repeat purchase from <strong>27% to 51%</strong>.</p>
+          <div class="nl-card" id="newsletter">
+            <h2 class="nl-title">The marketing tricks and strategies that actually worked, free in your inbox.</h2>
+            <form class="signup" action="/api/subscribe" method="post" data-location="hero">
+              <div class="signup-fields">
+                <label class="sr-only" for="nl-email-hero">Email address</label>
+                <input id="nl-email-hero" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+              </div>
+              <input type="hidden" name="source" value="hero">
+              <div class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></div>
+              <p class="signup-status" role="status" aria-live="polite"></p>
+              <p class="signup-note">Free. Unsubscribe any time. Your email is never shared.</p>
+            </form>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <figure class="slot r-4x5" data-fallback>
+            <img src="images/photo-1.jpg" alt="Pugazhenthi L, growth marketer" width="1600" height="2000" fetchpriority="high">
+            <figcaption class="slot-label"><b>✕ Photo 1</b><span>Upload as images/photo-1.jpg</span><small>Portrait, 1600 × 2000</small></figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -383,7 +433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- PROOF -->
   <section class="proof" aria-label="Results">
     <div class="wrap">
-      <ul class="coverlines proof-list">
+      <ul class="proof-list">
         <li><span class="cl-big">0.8<span class="to">to</span>~3</span><span class="cl-small">Return on ad spend, on an account that was losing money</span></li>
         <li><span class="cl-big">27%<span class="to">to</span>51%</span><span class="cl-small">Customers who come back and buy again</span></li>
         <li><span class="cl-big"><span class="sym">₹</span>15L<span class="sym">+</span></span><span class="cl-small">Meta and Google budget I own every month</span></li>
@@ -392,6 +442,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="textlink" href="mailto:pugazzh2802@gmail.com">Email me</a>
         <a class="textlink" href="https://www.linkedin.com/in/pugazhenthi-l" target="_blank" rel="noopener">LinkedIn</a>
         <a class="textlink" href="resume.pdf" download>Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS (new) -->
+  <section class="section" id="brands" aria-labelledby="brands-h">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 class="display" id="brands-h"><span class="dummy">✕ DUMMY</span>Brands I've grown</h2>
+        <p class="standfirst"><span class="dummy">✕ DUMMY</span>One line on the kind of brands you work with: D2C fashion, lifestyle and education.</p>
+      </div>
+      <div class="brands" role="list">
+        <div class="brand-tile" role="listitem"><span class="logo" data-fallback><img src="images/logo-1.png" alt="IshqME"><span class="logo-text">✕ Logo 1<br>IshqME</span></span><small>images/logo-1.png</small></div>
+        <div class="brand-tile" role="listitem"><span class="logo" data-fallback><img src="images/logo-2.png" alt="LMES Academy"><span class="logo-text">✕ Logo 2<br>LMES Academy</span></span><small>images/logo-2.png</small></div>
+        <div class="brand-tile" role="listitem"><span class="logo" data-fallback><img src="images/logo-3.png" alt="Memob Plus"><span class="logo-text">✕ Logo 3<br>Memob Plus</span></span><small>images/logo-3.png</small></div>
+        <div class="brand-tile" role="listitem"><span class="logo" data-fallback><img src="images/logo-4.png" alt=""><span class="logo-text">✕ Logo 4<br>DUMMY brand</span></span><small>images/logo-4.png</small></div>
+        <div class="brand-tile" role="listitem"><span class="logo" data-fallback><img src="images/logo-5.png" alt=""><span class="logo-text">✕ Logo 5<br>DUMMY brand</span></span><small>images/logo-5.png</small></div>
+        <div class="brand-tile" role="listitem"><span class="logo" data-fallback><img src="images/logo-6.png" alt=""><span class="logo-text">✕ Logo 6<br>DUMMY brand</span></span><small>images/logo-6.png</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND THINKING (new) -->
+  <section class="section tint" id="approach" aria-labelledby="approach-h">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 class="display" id="approach-h"><span class="dummy">✕ DUMMY</span>How I build brands that also sell</h2>
+        <p class="standfirst"><span class="dummy">✕ DUMMY</span>Two lines on why brand and performance belong in the same plan, in your own words.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <h3><span class="dummy">✕ DUMMY</span>Brand before bids</h3>
+          <p><span class="dummy">✕ DUMMY</span>Two or three sentences on this idea, with one example from your work. Replace this text.</p>
+        </div>
+        <div class="pillar">
+          <h3><span class="dummy">✕ DUMMY</span>Creative is the targeting</h3>
+          <p><span class="dummy">✕ DUMMY</span>Two or three sentences on this idea, with one example from your work. Replace this text.</p>
+        </div>
+        <div class="pillar">
+          <h3><span class="dummy">✕ DUMMY</span>Loyalty is a brand job</h3>
+          <p><span class="dummy">✕ DUMMY</span>Two or three sentences on this idea, with one example from your work. Replace this text.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -405,29 +497,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="gantt" role="list">
-        <a class="g-row" href="#freelance" role="listitem" data-start="2018-06" data-end="2021-06">
+        <a class="g-row b-free" href="#freelance" role="listitem" data-start="2018-06" data-end="2021-06">
           <span class="g-label">
             <span><span class="g-name">Freelance</span><span class="g-meta">Paid ads specialist and copywriter<br>Jun 2018 – Jun 2021</span></span>
           </span>
           <span class="g-track" aria-hidden="true"><span class="g-bar"></span></span>
         </a>
-        <a class="g-row" href="#lmes" role="listitem" data-start="2021-07" data-end="2023-06">
+        <a class="g-row b-lmes" href="#lmes" role="listitem" data-start="2021-07" data-end="2023-06">
           <span class="g-label">
-            <span class="logo" data-fallback><img src="images/logos/lmes-academy.png" alt="" loading="lazy"><span class="logo-text">LMES</span></span>
+            <span class="logo" data-fallback><img src="images/logo-2.png" alt=""><span class="logo-text">✕ Logo 2</span></span>
             <span><span class="g-name">LMES Academy</span><span class="g-meta">Digital Marketing Team Lead<br>Jul 2021 – Jun 2023</span></span>
           </span>
           <span class="g-track" aria-hidden="true"><span class="g-bar"></span></span>
         </a>
-        <a class="g-row" href="#memob" role="listitem" data-start="2023-06" data-end="2025-01">
+        <a class="g-row b-memob" href="#memob" role="listitem" data-start="2023-06" data-end="2025-01">
           <span class="g-label">
-            <span class="logo" data-fallback><img src="images/logos/memob-plus.png" alt="" loading="lazy"><span class="logo-text">Memob</span></span>
+            <span class="logo" data-fallback><img src="images/logo-3.png" alt=""><span class="logo-text">✕ Logo 3</span></span>
             <span><span class="g-name">Memob Plus India</span><span class="g-meta">Programmatic Performance Executive<br>Jun 2023 – Jan 2025</span></span>
           </span>
           <span class="g-track" aria-hidden="true"><span class="g-bar"></span></span>
         </a>
-        <a class="g-row current" href="#ishqme" role="listitem" data-start="2025-01" data-end="now">
+        <a class="g-row b-ishqme current" href="#ishqme" role="listitem" data-start="2025-01" data-end="now">
           <span class="g-label">
-            <span class="logo" data-fallback><img src="images/logos/ishqme.png" alt="" loading="lazy"><span class="logo-text">IshqME</span></span>
+            <span class="logo" data-fallback><img src="images/logo-1.png" alt=""><span class="logo-text">✕ Logo 1</span></span>
             <span><span class="g-name">IshqME, via M1 Marketing</span><span class="g-meta">Performance Analyst, Growth and Paid Media<br>Jan 2025 – now</span></span>
           </span>
           <span class="g-track" aria-hidden="true"><span class="g-bar"></span></span>
@@ -437,9 +529,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COVER STORY: ROAS -->
-  <section class="section" id="ishqme" aria-labelledby="ishqme-h">
+  <!-- ISHQME: ROAS -->
+  <section class="section tint b-ishqme" id="ishqme" aria-labelledby="ishqme-h">
     <div class="wrap">
+      <p class="swatch">IshqME</p>
       <div class="head-row">
         <h2 class="display" id="ishqme-h">The account that was losing money</h2>
         <p class="standfirst">IshqME, a D2C fashion and lifestyle brand. Performance Analyst, Growth and Paid Media at M1 Marketing Pvt Ltd, January 2025 to now.</p>
@@ -452,7 +545,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>I own the <strong>₹15L+ monthly</strong> Meta and Google budget end to end: funnel-stage media plans, plus bid and budget strategy across acquisition and retargeting.</p>
         </div>
 
-        <figure style="margin:0">
+        <figure class="chart-card" style="margin:0">
           <p class="chart-title">Return on ad spend at IshqME</p>
           <p class="chart-sub">The three known points, joined by straight lines</p>
           <div class="roas" id="roas">
@@ -463,8 +556,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="gl base" style="top:100%"></span><span class="yt" style="top:100%">0</span>
               <div class="reveal" aria-hidden="true">
                 <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <polygon points="0,77.14 28.57,42.86 100,14.29 100,100 0,100" fill="#F2B33D" fill-opacity=".1"/>
-                  <polyline points="0,77.14 28.57,42.86 100,14.29" fill="none" stroke="#F2B33D" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+                  <polygon points="0,77.14 28.57,42.86 100,14.29 100,100 0,100" fill="#E0338A" fill-opacity=".12"/>
+                  <polyline points="0,77.14 28.57,42.86 100,14.29" fill="none" stroke="#E0338A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
                 </svg>
               </div>
               <span class="pt first" style="left:0;top:77.14%" aria-hidden="true"></span>
@@ -493,13 +586,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- PHOTO BAND -->
-  <figure class="photo band-photo" data-fallback data-file="images/pugazh-at-work.jpg">
-    <img src="images/pugazh-at-work.jpg" alt="Pugazhenthi at work, reviewing campaign dashboards" width="2400" height="1600" loading="lazy">
-  </figure>
-
-  <!-- RETENTION -->
-  <section class="section" id="retention" aria-labelledby="ret-h">
+  <div class="band tint">
     <div class="wrap">
+      <figure class="slot r-band" data-fallback>
+        <img src="images/photo-2.jpg" alt="Pugazhenthi at work, reviewing campaign dashboards" width="2400" height="1600" loading="lazy">
+        <figcaption class="slot-label"><b>✕ Photo 2</b><span>Upload as images/photo-2.jpg</span><small>Wide, 2400 × 1600</small></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ISHQME: RETENTION -->
+  <section class="section b-ishqme" id="retention" aria-labelledby="ret-h">
+    <div class="wrap">
+      <p class="swatch">IshqME</p>
       <div class="head-row">
         <h2 class="display" id="ret-h">Half of customers now come back</h2>
         <p class="standfirst">Repeat purchase went from 27% to 51% at IshqME, and the average basket grew from ₹3,000 to ₹3,700.</p>
@@ -511,7 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>For bigger baskets I launched <strong>product bundles</strong> and a <strong>progressive cart-value offer panel</strong> that unlocks tiered discounts as the cart grows.</p>
         </div>
 
-        <div>
+        <div class="chart-card">
           <p class="chart-title">Out of every 100 customers, how many buy again</p>
           <div class="waffles" style="margin-top:1rem">
             <div class="waffle before">
@@ -526,7 +625,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
 
-          <p class="chart-title" style="margin-top:2.5rem">Average order value</p>
+          <p class="chart-title" style="margin-top:2.25rem">Average order value</p>
           <div class="bars">
             <div class="bar-row"><span class="bar-label">When I joined</span><span class="bar-track"><span class="bar muted" style="width:calc((100% - 4.5rem) * .8108)"></span><span class="bar-val">₹3,000</span></span></div>
             <div class="bar-row"><span class="bar-label">Now</span><span class="bar-track"><span class="bar" style="width:calc(100% - 4.5rem)"></span><span class="bar-val">₹3,700</span></span></div>
@@ -536,9 +635,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- FIXES -->
-  <section class="section" id="fixes" aria-labelledby="fix-h">
+  <!-- CAMPAIGN WORK (new) -->
+  <section class="section tint" id="work" aria-labelledby="work-h">
     <div class="wrap">
+      <div class="head-row">
+        <h2 class="display" id="work-h"><span class="dummy">✕ DUMMY</span>Campaigns and creative</h2>
+        <p class="standfirst"><span class="dummy">✕ DUMMY</span>A few ads, launches and influencer pieces you're proud of, with one result each.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <div class="slot r-4x5" data-fallback>
+            <img src="images/photo-4.jpg" alt="" loading="lazy" width="1200" height="1500">
+            <div class="slot-label"><b>✕ Photo 4</b><span>Upload as images/photo-4.jpg</span><small>Ad creative, 1200 × 1500</small></div>
+          </div>
+          <figcaption><span class="dummy">✕ DUMMY</span>Campaign name, brand, and one result.</figcaption>
+        </figure>
+        <figure>
+          <div class="slot r-4x5" data-fallback>
+            <img src="images/photo-5.jpg" alt="" loading="lazy" width="1200" height="1500">
+            <div class="slot-label"><b>✕ Photo 5</b><span>Upload as images/photo-5.jpg</span><small>Ad creative, 1200 × 1500</small></div>
+          </div>
+          <figcaption><span class="dummy">✕ DUMMY</span>Campaign name, brand, and one result.</figcaption>
+        </figure>
+        <figure>
+          <div class="slot r-4x5" data-fallback>
+            <img src="images/photo-6.jpg" alt="" loading="lazy" width="1200" height="1500">
+            <div class="slot-label"><b>✕ Photo 6</b><span>Upload as images/photo-6.jpg</span><small>Ad creative, 1200 × 1500</small></div>
+          </div>
+          <figcaption><span class="dummy">✕ DUMMY</span>Campaign name, brand, and one result.</figcaption>
+        </figure>
+        <figure>
+          <div class="slot r-4x5" data-fallback>
+            <img src="images/photo-7.jpg" alt="" loading="lazy" width="1200" height="1500">
+            <div class="slot-label"><b>✕ Photo 7</b><span>Upload as images/photo-7.jpg</span><small>Ad creative, 1200 × 1500</small></div>
+          </div>
+          <figcaption><span class="dummy">✕ DUMMY</span>Campaign name, brand, and one result.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIXES -->
+  <section class="section b-ishqme" id="fixes" aria-labelledby="fix-h">
+    <div class="wrap">
+      <p class="swatch">IshqME</p>
       <div class="head-row">
         <h2 class="display" id="fix-h">The work that makes the numbers hold</h2>
         <p class="standfirst">Less visible than ROAS, and the reason ROAS can be trusted.</p>
@@ -565,14 +705,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="press">
         <p class="press-names" aria-label="Elle, Forbes and Vogue"><span>Elle</span><span>Forbes</span><span>Vogue</span></p>
-        <p>I shaped IshqME's SEO strategy from keyword and content insight, and negotiated backlink placements in these titles at <strong style="color:var(--ink)">20–30% below quoted rates</strong>.</p>
+        <p>I shaped IshqME's SEO strategy from keyword and content insight, and negotiated backlink placements in these titles at <strong>20–30% below quoted rates</strong>.</p>
       </div>
     </div>
   </section>
 
   <!-- MEMOB -->
-  <section class="section" id="memob" aria-labelledby="memob-h">
+  <section class="section tint b-memob" id="memob" aria-labelledby="memob-h">
     <div class="wrap">
+      <p class="swatch">Memob Plus</p>
       <div class="head-row">
         <h2 class="display" id="memob-h">Programmatic, at volume</h2>
         <p class="standfirst">Memob Plus India. Programmatic Performance Executive, June 2023 to January 2025.</p>
@@ -588,7 +729,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <figure style="margin:0">
+        <figure class="chart-card" style="margin:0">
           <p class="chart-title">What changed while I was there</p>
           <p class="chart-sub">Change in each measure, largest first</p>
           <div class="bars">
@@ -603,23 +744,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- LMES -->
-  <section class="section" id="lmes" aria-labelledby="lmes-h">
+  <section class="section b-lmes" id="lmes" aria-labelledby="lmes-h">
     <div class="wrap">
       <div class="lmes-grid">
-        <figure class="photo lmes-photo" data-fallback data-file="images/pugazh-presenting.jpg">
-          <img src="images/pugazh-presenting.jpg" alt="Pugazhenthi presenting to a team" width="1600" height="2000" loading="lazy">
+        <figure class="slot r-4x5" data-fallback>
+          <img src="images/photo-3.jpg" alt="Pugazhenthi presenting to a team" width="1600" height="2000" loading="lazy">
+          <figcaption class="slot-label"><b>✕ Photo 3</b><span>Upload as images/photo-3.jpg</span><small>Portrait, 1600 × 2000</small></figcaption>
         </figure>
 
         <div>
+          <p class="swatch">LMES Academy</p>
           <h2 class="display" id="lmes-h">Leading a team in edtech</h2>
-          <p class="standfirst">LMES Academy, working on Chitti and PickMyCareer. Digital Marketing Team Lead, July 2021 to June 2023.</p>
+          <p class="standfirst" style="margin-top:1rem">LMES Academy, working on Chitti and PickMyCareer. Digital Marketing Team Lead, July 2021 to June 2023.</p>
 
           <div class="prose" style="margin-top:2rem">
             <p>I led a team of digital marketing executives and owned campaign delivery, deadlines and reporting across Meta, Google and YouTube.</p>
             <p>Leads grew when I rebuilt targeting from historical campaign data. Events filled through email and social nurture funnels. With the sales team I reworked the pitch, and with the design team I built the video creative.</p>
           </div>
 
-          <figure style="margin:2.5rem 0 0">
+          <figure class="chart-card" style="margin:2.5rem 0 0">
             <p class="chart-title">What grew</p>
             <div class="bars">
               <div class="bar-row"><span class="bar-label">Event attendance</span><span class="bar-track"><span class="bar" style="width:calc((100% - 4rem) * 1)"></span><span class="bar-val">+60%</span></span></div>
@@ -637,7 +780,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="db-track" aria-hidden="true">
                   <span class="db-seg" style="left:75%;width:15%"></span>
                   <span class="db-dot" style="left:75%;background:var(--before)"></span>
-                  <span class="db-dot" style="left:90%;background:var(--accent)"></span>
+                  <span class="db-dot" style="left:90%;background:var(--marigold)"></span>
                 </span>
                 <span class="db-v">18%</span>
               </div>
@@ -649,13 +792,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- FREELANCE -->
-  <section class="section" id="freelance" aria-labelledby="free-h">
+  <section class="section tint b-free" id="freelance" aria-labelledby="free-h">
     <div class="wrap">
       <div class="origin">
         <p class="origin-year" aria-hidden="true">2018</p>
         <div>
+          <p class="swatch">Freelance</p>
           <h2 class="display" id="free-h">Where it started</h2>
-          <p class="standfirst">Freelance paid ads specialist and copywriter, June 2018 to June 2021.</p>
+          <p class="standfirst" style="margin-top:1rem">Freelance paid ads specialist and copywriter, June 2018 to June 2021.</p>
           <div class="prose" style="margin-top:1.5rem">
             <p>Three years planning and running Meta and Google campaigns for small businesses and individuals, and writing conversion-focused ad and landing-page copy that consistently improved CTR and lowered CPC.</p>
           </div>
@@ -673,13 +817,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="logo-strip" role="list" aria-label="Platforms">
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/meta.png" alt="Meta" loading="lazy"><span class="logo-text">Meta</span></span>
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/google-ads.png" alt="Google Ads" loading="lazy"><span class="logo-text">Google Ads</span></span>
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/google-analytics.png" alt="Google Analytics" loading="lazy"><span class="logo-text">Google Analytics</span></span>
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/google-tag-manager.png" alt="Google Tag Manager" loading="lazy"><span class="logo-text">Tag Manager</span></span>
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/whatsapp-business.png" alt="WhatsApp Business" loading="lazy"><span class="logo-text">WhatsApp Business</span></span>
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/power-bi.png" alt="Power BI" loading="lazy"><span class="logo-text">Power BI</span></span>
-        <span class="logo" role="listitem" data-fallback><img src="images/logos/excel.png" alt="Excel" loading="lazy"><span class="logo-text">Excel</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-7.png" alt="Meta"><span class="logo-text">✕ Logo 7<br>Meta</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-8.png" alt="Google Ads"><span class="logo-text">✕ Logo 8<br>Google Ads</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-9.png" alt="Google Analytics"><span class="logo-text">✕ Logo 9<br>Google Analytics</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-10.png" alt="Google Tag Manager"><span class="logo-text">✕ Logo 10<br>Tag Manager</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-11.png" alt="WhatsApp Business"><span class="logo-text">✕ Logo 11<br>WhatsApp Business</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-12.png" alt="Power BI"><span class="logo-text">✕ Logo 12<br>Power BI</span></span>
+        <span class="logo" role="listitem" data-fallback><img src="images/logo-13.png" alt="Excel"><span class="logo-text">✕ Logo 13<br>Excel</span></span>
       </div>
 
       <div class="skills">
@@ -707,6 +851,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- TESTIMONIALS (new) -->
+  <section class="section tint" id="words" aria-labelledby="words-h">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 class="display" id="words-h"><span class="dummy">✕ DUMMY</span>What people I've worked with say</h2>
+        <p class="standfirst"><span class="dummy">✕ DUMMY</span>Short quotes from a manager, a founder or a client. Ask for one or two lines each.</p>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote><span class="dummy">✕ DUMMY</span>A short quote about the result you delivered or how you work. One or two sentences.</blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">A</span><span><span class="dummy">✕ DUMMY</span>Name, role, company</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><span class="dummy">✕ DUMMY</span>A short quote about the result you delivered or how you work. One or two sentences.</blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">B</span><span><span class="dummy">✕ DUMMY</span>Name, role, company</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><span class="dummy">✕ DUMMY</span>A short quote about the result you delivered or how you work. One or two sentences.</blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">C</span><span><span class="dummy">✕ DUMMY</span>Name, role, company</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- NEWSLETTER, AGAIN -->
   <section class="nl-band" aria-labelledby="nl2-h">
     <div class="wrap nl-band-grid">
@@ -714,17 +882,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 class="display" id="nl2-h">Get the next strategy in your inbox</h2>
         <p class="standfirst">What I test on real budgets, written up so you can use it. Free.</p>
       </div>
-      <form class="signup" action="/api/subscribe" method="post" data-location="footer">
-        <div class="signup-fields">
-          <label class="sr-only" for="nl-email-footer">Email address</label>
-          <input id="nl-email-footer" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Enter your email">
-          <button type="submit">Subscribe</button>
-        </div>
-        <input type="hidden" name="source" value="footer">
-        <div class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></div>
-        <p class="signup-status" role="status" aria-live="polite"></p>
-        <p class="signup-note">Free. Unsubscribe any time. Your email is never shared.</p>
-      </form>
+      <div class="nl-card">
+        <form class="signup" action="/api/subscribe" method="post" data-location="footer">
+          <div class="signup-fields">
+            <label class="sr-only" for="nl-email-footer">Email address</label>
+            <input id="nl-email-footer" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </div>
+          <input type="hidden" name="source" value="footer">
+          <div class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></div>
+          <p class="signup-status" role="status" aria-live="polite"></p>
+          <p class="signup-note">Free. Unsubscribe any time. Your email is never shared.</p>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -757,11 +927,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 (function(){
   var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
 
-  /* Show a placeholder (photos) or the name (logos) when an image file isn't there yet */
+  /* Placeholders: each photo/logo slot shows its label until its image file loads.
+     Upload the file with the name shown on the label and it replaces the label automatically. */
+  function loaded(img){ var host=img.closest('[data-fallback]'); if(host){ host.classList.add('is-loaded'); host.classList.remove('is-missing'); } }
   function missing(img){ var host=img.closest('[data-fallback]'); if(host) host.classList.add('is-missing'); }
   [].forEach.call(document.querySelectorAll('[data-fallback] img'),function(img){
-    if(img.complete && img.naturalWidth===0) missing(img);
-    else img.addEventListener('error',function(){ missing(img); });
+    if(img.complete){ if(img.naturalWidth>0) loaded(img); else missing(img); }
+    img.addEventListener('load',function(){ if(img.naturalWidth>0) loaded(img); });
+    img.addEventListener('error',function(){ missing(img); });
   });
 
   /* Newsletter signup: posts to /api/subscribe, shows the result in place,
